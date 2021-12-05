@@ -1,0 +1,44 @@
+HEADER
+"PSFversion" "1.00"
+"simulator" "spectre"
+"version" "20.1.0.126.isr3"
+"date" "5:26:35 PM, Sun Nov 28, 2021"
+"design" "// Generated for: spectre"
+"analysis type" "info"
+"analysis name" "designParamVals"
+"analysis description" "Circuit Information"
+"xVecSorted" "unknown"
+"tolerance.relative" 0.00100000
+TYPE
+"top-level" STRUCT(
+"temp" FLOAT DOUBLE
+"tnom" FLOAT DOUBLE
+"time" FLOAT DOUBLE
+"RS" FLOAT DOUBLE
+"RL1" FLOAT DOUBLE
+"RL3" FLOAT DOUBLE
+"W1" FLOAT DOUBLE
+"W2" FLOAT DOUBLE
+"W3" FLOAT DOUBLE
+"Ccomp" FLOAT DOUBLE
+"IBIAS2" FLOAT DOUBLE
+"Cpar" FLOAT DOUBLE
+) PROP(
+"key" "parameters"
+)
+VALUE
+"top-level" "top-level" (
+2.700000000000000e+01
+2.700000000000000e+01
+0.000000000000000e+00
+3.200000000000000e+03
+2.400000000000000e+03
+1.170000000000000e+04
+1.200000000000000e-05
+6.000000000000000e-06
+6.000000000000000e-06
+2.000000000000000e-12
+1.000000000000000e-04
+1.000000000000000e-12
+)
+END

@@ -1,0 +1,7 @@
+// Generated for: spectre
+// Generated on: Oct  6 08:25:39 2021
+// Design library name: MyOwnECE6720
+// Design cell name: diffpair
+// Design view name: schematic
+simulator lang=spectre
+global 0 vdd!

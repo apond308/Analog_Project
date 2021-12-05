@@ -1,0 +1,11 @@
+
+// Library name: MyOwnECE6720
+// Cell name: Common_Gate
+// View name: schematic
+V1 (net4 0) vsource dc=1.8 type=dc
+V0 (net1 0) vsource dc=900m type=dc
+M0 (out net1 net2 0) nmos180 w=15u l=0.18u
+R0 (net4 out) resistor r=4K
+C0 (out 0) capacitor c=200f
+I2 (net2 0) isource dc=200u type=dc
+I1 (net2 0) isource mag=1 type=dc

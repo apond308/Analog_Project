@@ -1,0 +1,210 @@
+
+Spectre (R) Circuit Simulator
+Version 20.1.0.126.isr3 64bit -- 16 Jan 2021
+Copyright (C) 1989-2020 Cadence Design Systems, Inc. All rights reserved worldwide. Cadence and Spectre are registered trademarks of Cadence Design Systems, Inc. All others are the property of their respective holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
+
+User: u0666767   Host: lnissrv4   HostID: 629BAC6F   PID: 1874361
+Memory  available: 312.3397 GB  physical: 539.6305 GB
+Linux   : Red Hat Enterprise Linux release 8.4 (Ootpa)
+CPU Type: Intel(R) Xeon(R) Gold 6142 CPU @ 2.60GHz
+        Socket: Processors [Frequency] (Hyperthreaded Processor)
+        0:       0 [3378.8] ( 32 ),  1 [3379.3] ( 33 ),  2 [3402.6] ( 34 )
+                 3 [3399.9] ( 35 ),  4 [3400.2] ( 36 ),  5 [3379.5] ( 37 )
+                 6 [3398.8] ( 38 ),  7 [3379.6] ( 39 ),  8 [3370.9] ( 40 )
+                 9 [3298.9] ( 41 ), 10 [3273.6] ( 42 ), 11 [2699.4] ( 43 )
+                12 [3379.4] ( 44 ), 13 [3010.8] ( 45 ), 14 [3116.1] ( 46 )
+                15 [3054.0] ( 47 )
+        1:      16 [3213.4] ( 48 ), 17 [3326.1] ( 49 ), 18 [3337.8] ( 50 )
+                19 [3309.4] ( 51 ), 20 [3375.2] ( 52 ), 21 [3122.1] ( 53 )
+                22 [2961.3] ( 54 ), 23 [3299.4] ( 55 ), 24 [3131.6] ( 56 )
+                25 [3299.7] ( 57 ), 26 [3302.6] ( 58 ), 27 [3308.1] ( 59 )
+                28 [3368.8] ( 60 ), 29 [3222.3] ( 61 ), 30 [3300.5] ( 62 )
+                31 [3206.6] ( 63 )
+        
+System load averages (1min, 5min, 15min) : 15.6 %, 14.2 %, 14.0 %
+Hyperthreading is enabled
+HPC is enabled
+
+
+Simulating `input.scs' on lnissrv4 at 8:56:38 AM, Wed Nov 24, 2021 (process id: 1874361).
+Current working directory: /home/u0666767/ECE6720_F21/simulation/HW10/spectre/schematic/netlist
+Environment variable:
+    SPECTRE_DEFAULTS=-E
+Command line:
+    /uusoc/facility/cad_tools/Cadence/SPECTRE201/tools/bin/spectre -64  \
+        input.scs +escchars +log ../psf/spectre.out -format psfxl -raw  \
+        ../psf +aps +lqtimeout 900 -maxw 5 -maxn 5 -env ade
+
+Loading /uusoc/facility/cad_tools/Cadence/SPECTRE201/tools.lnx86/cmi/lib/64bit/5.0/libinfineon_sh.so ...
+Loading /uusoc/facility/cad_tools/Cadence/SPECTRE201/tools.lnx86/cmi/lib/64bit/5.0/libphilips_o_sh.so ...
+Loading /uusoc/facility/cad_tools/Cadence/SPECTRE201/tools.lnx86/cmi/lib/64bit/5.0/libphilips_sh.so ...
+Loading /uusoc/facility/cad_tools/Cadence/SPECTRE201/tools.lnx86/cmi/lib/64bit/5.0/libsparam_sh.so ...
+Loading /uusoc/facility/cad_tools/Cadence/SPECTRE201/tools.lnx86/cmi/lib/64bit/5.0/libstmodels_sh.so ...
+Reading file:  /home/u0666767/ECE6720_F21/simulation/HW10/spectre/schematic/netlist/input.scs
+Reading file:  /uusoc/facility/cad_tools/Cadence/SPECTRE201/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file:  /usr/include/stdc-predef.h
+Reading file:  /home/AMSICtools/models/Generic180nm.mod
+Time for NDB Parsing: CPU = 70.968 ms, elapsed = 393.405 ms.
+Time accumulated: CPU = 154.326 ms, elapsed = 393.413 ms.
+Peak resident memory used = 109 Mbytes.
+
+Time for Elaboration: CPU = 19.449 ms, elapsed = 20.3528 ms.
+Time accumulated: CPU = 173.873 ms, elapsed = 413.864 ms.
+Peak resident memory used = 116 Mbytes.
+
+
+Warning from spectre during hierarchy flattening.
+    WARNING (SPECTRE-17101): The value 'psf' specified for the 'checklimitdest' option will no longer be supported in future releases. Use 'spectre -h' to see other recommended values for the 'checklimitdest' option.
+
+
+Time for EDB Visiting: CPU = 532 us, elapsed = 539.064 us.
+Time accumulated: CPU = 174.495 ms, elapsed = 414.493 ms.
+Peak resident memory used = 116 Mbytes.
+
+
+Notice from spectre during initial setup.
+    Multithreading is disabled due to the size of the design being too small.
+
+
+Global user options:
+         psfversion = 1.4.0
+            vabstol = 1e-06
+            iabstol = 1e-12
+               temp = 27
+               gmin = 1e-12
+             rforce = 1
+           maxnotes = 5
+           maxwarns = 5
+             digits = 5
+               cols = 80
+             pivrel = 0.001
+           sensfile = ../psf/sens.output
+     checklimitdest = psf
+               save = allpub
+           currents = all
+             reltol = 0.001
+               tnom = 27
+             scalem = 1
+              scale = 1
+
+Scoped user options:
+
+Circuit inventory:
+              nodes 3
+            bsim3v3 1     
+             iprobe 1     
+            vsource 2     
+
+Analysis and control statement inventory:
+                 dc 2     
+               info 7     
+
+Output statements:
+             .probe 0     
+           .measure 0     
+               save 1     
+
+
+Notice from spectre during initial setup.
+    APS enabled.
+
+Time for parsing: CPU = 2.361 ms, elapsed = 7.7889 ms.
+Time accumulated: CPU = 176.925 ms, elapsed = 422.35 ms.
+Peak resident memory used = 120 Mbytes.
+
+~~~~~~~~~~~~~~~~~~~~~~
+Pre-Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+
+******************
+DC Analysis `dcOp'
+******************
+
+Opening the PSF file ../psf/dcOp.dc ...
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+    rabsshort = 1 mOhm
+
+Maximum value achieved for any signal of each quantity: 
+V: V(net4) = 1.8 V
+I: I(V1:p) = 87.38 pA
+Convergence achieved in 2 iterations.
+DC simulation time: CPU = 1.797 ms, elapsed = 11.2081 ms.
+Total time required for dc analysis `dcOp': CPU = 1.84 ms, elapsed = 11.2491 ms.
+Time accumulated: CPU = 183.717 ms, elapsed = 439.78 ms.
+Peak resident memory used = 121 Mbytes.
+
+dcOpInfo: writing operating point information to rawfile.
+
+Opening the PSF file ../psf/dcOpInfo.info ...
+
+**********************************
+DC Analysis `dc': Vgs = (0 -> 1.8)
+**********************************
+
+Opening the PSF file ../psf/dc.dc ...
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+    rabsshort = 1 mOhm
+    dc: Vgs = 200e-03     (11.1 %), step = 200e-03      (11.1 %)
+    dc: Vgs = 400e-03     (22.2 %), step = 200e-03      (11.1 %)
+    dc: Vgs = 600e-03     (33.3 %), step = 200e-03      (11.1 %)
+    dc: Vgs = 800e-03     (44.4 %), step = 200e-03      (11.1 %)
+    dc: Vgs = 1           (55.6 %), step = 200e-03      (11.1 %)
+    dc: Vgs = 1.2         (66.7 %), step = 200e-03      (11.1 %)
+    dc: Vgs = 1.4         (77.8 %), step = 200e-03      (11.1 %)
+    dc: Vgs = 1.6         (88.9 %), step = 200e-03      (11.1 %)
+    dc: Vgs = 1.8          (100 %), step = 200e-03      (11.1 %)
+
+Maximum value achieved for any signal of each quantity: 
+V: V(net4) = 1.8 V
+I: I(V1:p) = 6.312 mA
+DC simulation time: CPU = 2.201 ms, elapsed = 10.2811 ms.
+
+Notice from spectre at Vgs = 1.8 during DC analysis `dc'.
+    The value of parameter 'Vgs' has been reset to the original value 0.
+
+Total time required for dc analysis `dc': CPU = 2.224 ms, elapsed = 10.304 ms.
+Time accumulated: CPU = 187.703 ms, elapsed = 461.073 ms.
+Peak resident memory used = 123 Mbytes.
+
+modelParameter: writing model parameter values to rawfile.
+
+Opening the PSF file ../psf/modelParameter.info ...
+element: writing instance parameter values to rawfile.
+
+Opening the PSF file ../psf/element.info ...
+outputParameter: writing output parameter values to rawfile.
+
+Opening the PSF file ../psf/outputParameter.info ...
+designParamVals: writing netlist parameters to rawfile.
+
+Opening the PSFASCII file ../psf/designParamVals.info ...
+primitives: writing primitives to rawfile.
+
+Opening the PSFASCII file ../psf/primitives.info.primitives ...
+subckts: writing subcircuits to rawfile.
+
+Opening the PSFASCII file ../psf/subckts.info.subckts ...
+
+Aggregate audit (8:56:38 AM, Wed Nov 24, 2021):
+Time used: CPU = 196 ms, elapsed = 539 ms, util. = 36.3%.
+Time spent in licensing: elapsed = 14.9 ms.
+Peak memory used = 124 Mbytes.
+Simulation started at: 8:56:38 AM, Wed Nov 24, 2021, ended at: 8:56:38 AM, Wed Nov 24, 2021, with elapsed time (wall clock): 539 ms.
+spectre completes with 0 errors, 1 warning, and 4 notices.

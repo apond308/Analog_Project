@@ -1,0 +1,34 @@
+// Generated for: spectre
+// Generated on: Nov  3 20:58:05 2021
+// Design library name: MyOwnECE6720
+// Design cell name: HW7
+// Design view name: schematic
+simulator lang=spectre
+global 0
+parameters V0=1.8
+include "/home/AMSICtools/models/Generic180nm.mod"
+
+// Library name: MyOwnECE6720
+// Cell name: HW7
+// View name: schematic
+M0 (net1 net2 0 0) nmos180 w=150u l=1u
+R3 (net2 net3) resistor r=10K
+R2 (net5 net3) resistor r=10K
+R1 (net3 net4) resistor r=10K
+R0 (net5 net1) resistor r=6.5K
+I2 (net2 0) isource mag=1 type=dc
+I0 (net5 net1) isource dc=300u type=dc
+IPRB0 (net4 net1) iprobe
+V0 (net5 0) vsource dc=V0 type=dc
+simulatorOptions options psfversion="1.4.0" reltol=1e-3 vabstol=1e-6 \
+    iabstol=1e-12 temp=27 tnom=27 scalem=1.0 scale=1.0 gmin=1e-12 rforce=1 \
+    maxnotes=5 maxwarns=5 digits=5 cols=80 pivrel=1e-3 \
+    sensfile="../psf/sens.output" checklimitdest=psf 
+stb stb start=1k stop=10G dec=100 probe=IPRB0 annotate=status 
+modelParameter info what=models where=rawfile
+element info what=inst where=rawfile
+outputParameter info what=output where=rawfile
+designParamVals info what=parameters where=rawfile
+primitives info what=primitives where=rawfile
+subckts info what=subckts where=rawfile
+saveOptions options save=allpub

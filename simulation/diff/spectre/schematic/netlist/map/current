@@ -1,0 +1,20 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "diff"
+  repList "spectre cmos_sch cmos.sch schematic veriloga"
+  stopList "spectre"
+  globalList "vdd! gnd!"
+  hierDelim "."
+  netlistDir "/home/u0666767/ECE6720_F21/simulation/diff/spectre/schematic/netlist"
+ )
+( net
+( "gnd!" "0" )
+ )
+( model
+( "ECE6720/ideal_balun/schematic" "ideal_balun" )
+( "MyOwnECE6720/diff/schematic" "diff" )
+ )
+( "diff" "ihnl/cds1/map" )
+( "ideal_balun" "ihnl/cds0/map" )
+ )

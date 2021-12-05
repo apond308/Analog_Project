@@ -1,0 +1,7 @@
+// Generated for: spectre
+// Generated on: Nov 28 07:35:30 2021
+// Design library name: MyOwnECE6720
+// Design cell name: Project
+// Design view name: schematic
+simulator lang=spectre
+global 0 vdd!

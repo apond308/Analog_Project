@@ -1,0 +1,8 @@
+HEADER
+"PSFversion" "1.00"
+"I0n" "HW9_A1"
+"IPRB0n" "ECE6720_iprobe_spectre"
+"M0n" "ECE6720_nmos_spectre"
+"R2n R1n R0n" "ECE6720_res_spectre"
+"V1n V0n" "ECE6720_vdc_spectre"
+"C1n" "ECE6720_cap_spectre"

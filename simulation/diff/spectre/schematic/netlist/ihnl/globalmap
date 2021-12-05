@@ -1,0 +1,14 @@
+CADENCE IHNL11140
+$model
+MyOwnECE6720/diff/schematic diff
+ECE6720/ideal_balun/schematic ideal_balun
+$endmodel
+$net
+gnd! 0
+vdd! vdd!
+$endnet
+$param
+AMP AMP
+IBIAS IBIAS
+FREQUENCY FREQUENCY
+$endparam

@@ -1,0 +1,35 @@
+
+// Library name: ECE6720
+// Cell name: D_to_SE_OTA_model
+// View name: schematic
+subckt D_to_SE_OTA_model VDD vim vip vout
+parameters ID
+    Cinm (vim 0) capacitor c=10*ID/2/M_PI/2e9
+    Cinp (vip 0) capacitor c=10*ID/2/M_PI/2e9
+    Ro (vout 0) resistor r=10/ID isnoisy=no
+    Rnoise (net6 0) resistor r=1/4/0.67/10/ID
+    Vn (net6 0) vsource dc=0 type=dc
+    Gm (0 vout vip vim) vccs gm=10*ID
+    Fnoise (vout 0) cccs gain=1.0 probe=Vn
+    Ibias (VDD 0) isource dc=2*ID type=dc
+ends D_to_SE_OTA_model
+// End of subcircuit definition.
+
+// Library name: MyOwnECE6720
+// Cell name: Project_Top_TB
+// View name: schematic
+Ccomp (Vgate1 0) capacitor c=Ccomp 
+CPAR (in 0) capacitor c=Cpar
+CL (Vout 0) capacitor c=50f
+VDD (vdd! 0) vsource dc=1.8 type=dc
+VBIAS (net9 0) vsource dc=600m type=dc
+Iin (0 in) isource dc=0 mag=1 type=sine
+M3 (Vout Vo2 0 0) nmos180 w=W3 l=0.18u
+M2 (vdd! Vo1 Vo2 0) nmos180 w=W2 l=0.18u
+M1 (Vo1 net11 in 0) nmos180 w=W1 l=0.18u
+RL1 (vdd! Vo1) resistor r=RL1
+RL3 (vdd! Vout) resistor r=RL3
+RS (in 0) resistor r=RS
+A1 (vdd! in net9 Vgate1) D_to_SE_OTA_model ID=200u
+IBIAS2 (Vo2 0) isource dc=IBIAS2 type=dc
+IPRB0 (net11 Vgate1) iprobe

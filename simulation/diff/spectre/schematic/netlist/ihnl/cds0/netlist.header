@@ -1,0 +1,5 @@
+
+// Library name: ECE6720
+// Cell name: ideal_balun
+// View name: schematic
+subckt ideal_balun vcm vdm vm vp

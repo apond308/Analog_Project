@@ -1,0 +1,19 @@
+HEADER
+"PSFversion" "1.00"
+"Time Stamp" "Dec  3 10:24:53 2021"
+TYPE
+"variable" STRUCT(
+"value" FLOAT DOUBLE
+) PROP( "key" "element" )
+VALUE
+"Cpar" "variable" ( 5e-12 ) PROP( )
+"IBIAS2" "variable" ( 100e-6 ) PROP( )
+"Ccomp" "variable" ( 2e-12 ) PROP( )
+"W3" "variable" ( 6e-6 ) PROP( )
+"W2" "variable" ( 6e-6 ) PROP( )
+"W1" "variable" ( 12e-6 ) PROP( )
+"RL3" "variable" ( 11.7e3 ) PROP( )
+"RL1" "variable" ( 2.4e3 ) PROP( )
+"RS" "variable" ( 3.2e3 ) PROP( )
+"temp" "variable" ( 27 ) PROP( )
+END

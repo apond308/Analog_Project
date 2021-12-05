@@ -1,0 +1,1 @@
+{"hierarchy":{"top_level":1,"1":{"insts":{"C0":5,"V1":2,"V0":2,"R0":4,"I2":6,"M0":3,"I1":6}}},"modelMap":{"vsource":[2],"nmos180":[3],"resistor":[4],"isource":[6],"capacitor":[5]},"cellviews":[["MyOwnECE6720","Common_Gate","schematic"],["ECE6720","vdc","spectre"],["ECE6720","nmos","spectre"],["ECE6720","res","spectre"],["ECE6720","cap","spectre"],["ECE6720","idc","spectre"]]}

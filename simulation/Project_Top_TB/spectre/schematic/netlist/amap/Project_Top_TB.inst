@@ -1,0 +1,10 @@
+HEADER
+"PSFversion" "1.00"
+"Ccompn CPARn CLn" "ECE6720_cap_spectre"
+"VDDn VBIASn" "ECE6720_vdc_spectre"
+"Iinn" "ECE6720_isin_spectre"
+"M3n M2n M1n" "ECE6720_nmos_spectre"
+"RL1n RL3n RSn" "ECE6720_res_spectre"
+"A1n" "D_to_SE_OTA_model"
+"IBIAS2n" "ECE6720_idc_spectre"
+"IPRB0n" "ECE6720_iprobe_spectre"

@@ -1,0 +1,2 @@
+parameters RS=3.2K RL1=2.4K RL3=11.7k W1=12u W2=6u W3=6u Ccomp=2p \
+    IBIAS2=100u Cpar=1p

@@ -1,0 +1,11 @@
+CADENCE IHNL11140
+$model
+MyOwnECE6720/HW10/schematic HW10
+$endmodel
+$net
+gnd! 0
+$endnet
+$param
+Vds Vds
+Vgs Vgs
+$endparam

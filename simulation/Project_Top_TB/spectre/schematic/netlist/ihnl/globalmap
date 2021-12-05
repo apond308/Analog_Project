@@ -1,0 +1,20 @@
+CADENCE IHNL11140
+$model
+MyOwnECE6720/Project_Top_TB/schematic Project_Top_TB
+ECE6720/D_to_SE_OTA_model/schematic D_to_SE_OTA_model
+$endmodel
+$net
+gnd! 0
+vdd! vdd!
+$endnet
+$param
+RL3 RL3
+W1 W1
+RL1 RL1
+Cpar Cpar
+RS RS
+W2 W2
+Ccomp Ccomp
+IBIAS2 IBIAS2
+W3 W3
+$endparam

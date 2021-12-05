@@ -1,0 +1,9 @@
+CADENCE IHNL11140
+$model
+MyOwnECE6720/Common_Gate/schematic Common_Gate
+$endmodel
+$net
+gnd! 0
+$endnet
+$param
+$endparam

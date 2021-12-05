@@ -1,0 +1,4 @@
+DEFINE basic $CDS/tools/dfII/etc/cdslib/basic
+DEFINE ECE6720 /home/AMSICtools/CourseLibraries/ECE6720
+
+DEFINE MyOwnECE6720 /home/u0666767/ECE6720_F21/MyOwnECE6720

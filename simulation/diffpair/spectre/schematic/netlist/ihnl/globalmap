@@ -1,0 +1,14 @@
+CADENCE IHNL11140
+$model
+MyOwnECE6720/diffpair/schematic diffpair
+ECE6720/ideal_balun/schematic ideal_balun
+$endmodel
+$net
+gnd! 0
+vdd! vdd!
+$endnet
+$param
+AMP AMP
+_EXPR_1 _EXPR_1
+FREQUENCY FREQUENCY
+$endparam

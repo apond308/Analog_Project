@@ -1,0 +1,27 @@
+
+// Library name: ECE6720
+// Cell name: ideal_balun
+// View name: schematic
+subckt ideal_balun vcm vdm vm vp
+    K3 (vm vcm 0 vdm) transformer n1=1 n2=2
+    K0 (vp vcm vdm 0) transformer n1=1 n2=2
+ends ideal_balun
+// End of subcircuit definition.
+
+// Library name: MyOwnECE6720
+// Cell name: diffpair
+// View name: schematic
+R3 (net2 vip) resistor r=10K
+R2 (net3 vim) resistor r=10K
+R1 (vdd! voutp) resistor r=1K
+R0 (vdd! voutm) resistor r=1K
+C1 (0 voutm) capacitor c=50f
+C0 (0 voutp) capacitor c=50f
+M1 (voutp vim net1 0) nmos180 w=12.35u l=0.18u
+M0 (voutm vip net1 0) nmos180 w=12.35u l=0.18u
+I1 (net1 0) isource dc=1.28m type=dc
+V1 (vicm 0) vsource dc=1 type=dc
+V0 (vdd! 0) vsource dc=1.8 type=dc
+I5 (vicm vidm net3 net2) ideal_balun
+I4 (vocm vodm voutm voutp) ideal_balun
+V2 (vidm 0) vsource mag=1 type=sine ampl=AMP freq=FREQUENCY

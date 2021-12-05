@@ -1,0 +1,6 @@
+
+// Library name: ECE6720
+// Cell name: D_to_SE_OTA_model
+// View name: schematic
+subckt D_to_SE_OTA_model VDD vim vip vout
+parameters ID

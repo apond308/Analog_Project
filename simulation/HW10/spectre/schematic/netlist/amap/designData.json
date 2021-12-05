@@ -1,0 +1,1 @@
+{"hierarchy":{"top_level":1,"1":{"insts":{"V1":3,"IPRB0":4,"V0":3,"M0":2}}},"modelMap":{"iprobe":[4],"nmos180":[2],"vsource":[3]},"cellviews":[["MyOwnECE6720","HW10","schematic"],["ECE6720","nmos","spectre"],["ECE6720","vdc","spectre"],["ECE6720","iprobe","spectre"]]}

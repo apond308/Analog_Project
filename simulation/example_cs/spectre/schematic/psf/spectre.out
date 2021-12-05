@@ -1,0 +1,304 @@
+
+Spectre (R) Circuit Simulator
+Version 20.1.0.126.isr3 64bit -- 16 Jan 2021
+Copyright (C) 1989-2020 Cadence Design Systems, Inc. All rights reserved worldwide. Cadence and Spectre are registered trademarks of Cadence Design Systems, Inc. All others are the property of their respective holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
+
+User: u0666767   Host: lnissrv4   HostID: 629BAC6F   PID: 3065408
+Memory  available: 310.0169 GB  physical: 539.6305 GB
+Linux   : Red Hat Enterprise Linux release 8.4 (Ootpa)
+CPU Type: Intel(R) Xeon(R) Gold 6142 CPU @ 2.60GHz
+        Socket: Processors [Frequency] (Hyperthreaded Processor)
+        0:       0 [3058.7] ( 32 ),  1 [2110.0] ( 33 ),  2 [1972.3] ( 34 )
+                 3 [2251.7] ( 35 ),  4 [1098.9] ( 36 ),  5 [3359.4] ( 37 )
+                 6 [2484.6] ( 38 ),  7 [2483.4] ( 39 ),  8 [1564.0] ( 40 )
+                 9 [1286.4] ( 41 ), 10 [2895.0] ( 42 ), 11 [3087.6] ( 43 )
+                12 [3300.5] ( 44 ), 13 [3374.8] ( 45 ), 14 [3299.0] ( 46 )
+                15 [2716.3] ( 47 )
+        1:      16 [1056.8] ( 48 ), 17 [3401.2] ( 49 ), 18 [1456.4] ( 50 )
+                19 [2188.6] ( 51 ), 20 [2234.8] ( 52 ), 21 [2390.5] ( 53 )
+                22 [2236.0] ( 54 ), 23 [1040.4] ( 55 ), 24 [1953.1] ( 56 )
+                25 [1387.3] ( 57 ), 26 [2236.5] ( 58 ), 27 [1062.8] ( 59 )
+                28 [1158.0] ( 60 ), 29 [1350.0] ( 61 ), 30 [2294.2] ( 62 )
+                31 [3305.2] ( 63 )
+        
+System load averages (1min, 5min, 15min) : 3.0 %, 3.2 %, 3.1 %
+Hyperthreading is enabled
+
+
+Simulating `input.scs' on lnissrv4 at 11:45:43 AM, Mon Sep 20, 2021 (process id: 3065408).
+Current working directory: /home/u0666767/ECE6720_F21/simulation/example_cs/spectre/schematic/netlist
+Environment variable:
+    SPECTRE_DEFAULTS=-E
+Command line:
+    /uusoc/facility/cad_tools/Cadence/SPECTRE201/tools/bin/spectre -64  \
+        input.scs +escchars +log ../psf/spectre.out +inter=mpsc  \
+        +mpssession=spectre0_3053483_1 -format sst2 -raw ../psf  \
+        +lqtimeout 900 -maxw 5 -maxn 5 -env ade
+spectre pid = 3065408
+
+Loading /uusoc/facility/cad_tools/Cadence/SPECTRE201/tools.lnx86/cmi/lib/64bit/5.0/libinfineon_sh.so ...
+Loading /uusoc/facility/cad_tools/Cadence/SPECTRE201/tools.lnx86/cmi/lib/64bit/5.0/libphilips_o_sh.so ...
+Loading /uusoc/facility/cad_tools/Cadence/SPECTRE201/tools.lnx86/cmi/lib/64bit/5.0/libphilips_sh.so ...
+Loading /uusoc/facility/cad_tools/Cadence/SPECTRE201/tools.lnx86/cmi/lib/64bit/5.0/libsparam_sh.so ...
+Loading /uusoc/facility/cad_tools/Cadence/SPECTRE201/tools.lnx86/cmi/lib/64bit/5.0/libstmodels_sh.so ...
+Reading file:  /home/u0666767/ECE6720_F21/simulation/example_cs/spectre/schematic/netlist/input.scs
+Reading file:  /uusoc/facility/cad_tools/Cadence/SPECTRE201/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file:  /usr/include/stdc-predef.h
+Reading file:  /home/AMSICtools/models/Generic180nm.mod
+Time for NDB Parsing: CPU = 67.751 ms, elapsed = 628.588 ms.
+Time accumulated: CPU = 144.493 ms, elapsed = 628.593 ms.
+Peak resident memory used = 108 Mbytes.
+
+Time for Elaboration: CPU = 16.798 ms, elapsed = 19.181 ms.
+Time accumulated: CPU = 161.391 ms, elapsed = 647.872 ms.
+Peak resident memory used = 116 Mbytes.
+
+
+Warning from spectre during hierarchy flattening.
+    WARNING (SPECTRE-17101): The value 'psf' specified for the 'checklimitdest' option will no longer be supported in future releases. Use 'spectre -h' to see other recommended values for the 'checklimitdest' option.
+
+
+Time for EDB Visiting: CPU = 1.018 ms, elapsed = 60.571 ms.
+Time accumulated: CPU = 162.492 ms, elapsed = 708.525 ms.
+Peak resident memory used = 117 Mbytes.
+
+
+Global user options:
+            vabstol = 1e-06
+            iabstol = 1e-12
+               temp = 27
+               gmin = 1e-12
+             rforce = 1
+           maxnotes = 5
+           maxwarns = 5
+             digits = 5
+               cols = 80
+             pivrel = 0.001
+           sensfile = ../psf/sens.output
+     checklimitdest = psf
+               save = allpub
+             reltol = 0.001
+               tnom = 27
+             scalem = 1
+              scale = 1
+
+Scoped user options:
+
+Circuit inventory:
+              nodes 3
+            bsim3v3 1     
+          capacitor 1     
+           resistor 1     
+            vsource 2     
+
+Analysis and control statement inventory:
+                 ac 1     
+                 dc 2     
+               info 7     
+
+Output statements:
+             .probe 0     
+           .measure 0     
+               save 1     
+
+Time for parsing: CPU = 3.198 ms, elapsed = 184.9 ms.
+Time accumulated: CPU = 165.767 ms, elapsed = 893.501 ms.
+Peak resident memory used = 120 Mbytes.
+
+~~~~~~~~~~~~~~~~~~~~~~
+Pre-Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+Entering remote command mode using MPSC service (spectre, ipi, v0.0, spectre0_3053483_1, ).
+
+******************************************
+AC Analysis `ac': freq = (10 kHz -> 1 GHz)
+******************************************
+DC simulation time: CPU = 371 us, elapsed = 22.666 ms.
+
+Opening the PSF file ../psf/ac.ac ...
+    ac: freq = 15.85 kHz      (4 %), step = 3.26 kHz        (2 %)
+    ac: freq = 19.95 kHz      (6 %), step = 4.104 kHz       (2 %)
+    ac: freq = 25.12 kHz      (8 %), step = 5.166 kHz       (2 %)
+    ac: freq = 31.62 kHz     (10 %), step = 6.504 kHz       (2 %)
+    ac: freq = 39.81 kHz     (12 %), step = 8.188 kHz       (2 %)
+    ac: freq = 50.12 kHz     (14 %), step = 10.31 kHz       (2 %)
+    ac: freq = 63.1 kHz      (16 %), step = 12.98 kHz       (2 %)
+    ac: freq = 79.43 kHz     (18 %), step = 16.34 kHz       (2 %)
+    ac: freq = 100 kHz       (20 %), step = 20.57 kHz       (2 %)
+    ac: freq = 125.9 kHz     (22 %), step = 25.89 kHz       (2 %)
+    ac: freq = 158.5 kHz     (24 %), step = 32.6 kHz        (2 %)
+    ac: freq = 199.5 kHz     (26 %), step = 41.04 kHz       (2 %)
+    ac: freq = 251.2 kHz     (28 %), step = 51.66 kHz       (2 %)
+    ac: freq = 316.2 kHz     (30 %), step = 65.04 kHz       (2 %)
+    ac: freq = 398.1 kHz     (32 %), step = 81.88 kHz       (2 %)
+    ac: freq = 501.2 kHz     (34 %), step = 103.1 kHz       (2 %)
+    ac: freq = 631 kHz       (36 %), step = 129.8 kHz       (2 %)
+    ac: freq = 794.3 kHz     (38 %), step = 163.4 kHz       (2 %)
+    ac: freq = 1 MHz         (40 %), step = 205.7 kHz       (2 %)
+    ac: freq = 1.259 MHz     (42 %), step = 258.9 kHz       (2 %)
+    ac: freq = 1.585 MHz     (44 %), step = 326 kHz         (2 %)
+    ac: freq = 1.995 MHz     (46 %), step = 410.4 kHz       (2 %)
+    ac: freq = 2.512 MHz     (48 %), step = 516.6 kHz       (2 %)
+    ac: freq = 3.162 MHz     (50 %), step = 650.4 kHz       (2 %)
+    ac: freq = 3.981 MHz     (52 %), step = 818.8 kHz       (2 %)
+    ac: freq = 5.012 MHz     (54 %), step = 1.031 MHz       (2 %)
+    ac: freq = 6.31 MHz      (56 %), step = 1.298 MHz       (2 %)
+    ac: freq = 7.943 MHz     (58 %), step = 1.634 MHz       (2 %)
+    ac: freq = 10 MHz        (60 %), step = 2.057 MHz       (2 %)
+    ac: freq = 12.59 MHz     (62 %), step = 2.589 MHz       (2 %)
+    ac: freq = 15.85 MHz     (64 %), step = 3.26 MHz        (2 %)
+    ac: freq = 19.95 MHz     (66 %), step = 4.104 MHz       (2 %)
+    ac: freq = 25.12 MHz     (68 %), step = 5.166 MHz       (2 %)
+    ac: freq = 31.62 MHz     (70 %), step = 6.504 MHz       (2 %)
+    ac: freq = 39.81 MHz     (72 %), step = 8.188 MHz       (2 %)
+    ac: freq = 50.12 MHz     (74 %), step = 10.31 MHz       (2 %)
+    ac: freq = 63.1 MHz      (76 %), step = 12.98 MHz       (2 %)
+    ac: freq = 79.43 MHz     (78 %), step = 16.34 MHz       (2 %)
+    ac: freq = 100 MHz       (80 %), step = 20.57 MHz       (2 %)
+    ac: freq = 125.9 MHz     (82 %), step = 25.89 MHz       (2 %)
+    ac: freq = 158.5 MHz     (84 %), step = 32.6 MHz        (2 %)
+    ac: freq = 199.5 MHz     (86 %), step = 41.04 MHz       (2 %)
+    ac: freq = 251.2 MHz     (88 %), step = 51.66 MHz       (2 %)
+    ac: freq = 316.2 MHz     (90 %), step = 65.04 MHz       (2 %)
+    ac: freq = 398.1 MHz     (92 %), step = 81.88 MHz       (2 %)
+    ac: freq = 501.2 MHz     (94 %), step = 103.1 MHz       (2 %)
+    ac: freq = 631 MHz       (96 %), step = 129.8 MHz       (2 %)
+    ac: freq = 794.3 MHz     (98 %), step = 163.4 MHz       (2 %)
+    ac: freq = 1 GHz        (100 %), step = 205.7 MHz       (2 %)
+Accumulated DC solution time =            0 s.
+Intrinsic ac analysis time =              0 s.
+Total time required for ac analysis `ac': CPU = 3.704 ms, elapsed = 120.238 ms.
+Time accumulated: CPU = 175.045 ms, elapsed = 1.05107 s.
+Peak resident memory used = 122 Mbytes.
+
+
+******************
+DC Analysis `dcOp'
+******************
+
+Opening the PSF file ../psf/dcOp.dc ...
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+
+Maximum value achieved for any signal of each quantity: 
+V: V(vdd!) = 1.8 V
+I: I(VDD:p) = 342.6 uA
+Convergence achieved in 2 iterations.
+DC simulation time: CPU = 975 us, elapsed = 34.9362 ms.
+Total time required for dc analysis `dcOp': CPU = 999 us, elapsed = 34.9591 ms.
+Time accumulated: CPU = 176.248 ms, elapsed = 1.09003 s.
+Peak resident memory used = 122 Mbytes.
+
+dcOpInfo: writing operating point information to rawfile.
+
+Opening the PSF file ../psf/dcOpInfo.info ...
+
+*****************************************
+DC Analysis `dc': VIN:dc = (0 V -> 1.8 V)
+*****************************************
+
+Opening the PSF file ../psf/dc.dc ...
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+    dc: dc = 72 mV          (4 %), step = 36 mV           (2 %)
+    dc: dc = 108 mV         (6 %), step = 36 mV           (2 %)
+    dc: dc = 144 mV         (8 %), step = 36 mV           (2 %)
+    dc: dc = 180 mV        (10 %), step = 36 mV           (2 %)
+    dc: dc = 216 mV        (12 %), step = 36 mV           (2 %)
+    dc: dc = 252 mV        (14 %), step = 36 mV           (2 %)
+    dc: dc = 288 mV        (16 %), step = 36 mV           (2 %)
+    dc: dc = 324 mV        (18 %), step = 36 mV           (2 %)
+    dc: dc = 360 mV        (20 %), step = 36 mV           (2 %)
+    dc: dc = 396 mV        (22 %), step = 36 mV           (2 %)
+    dc: dc = 432 mV        (24 %), step = 36 mV           (2 %)
+    dc: dc = 468 mV        (26 %), step = 36 mV           (2 %)
+    dc: dc = 504 mV        (28 %), step = 36 mV           (2 %)
+    dc: dc = 540 mV        (30 %), step = 36 mV           (2 %)
+    dc: dc = 576 mV        (32 %), step = 36 mV           (2 %)
+    dc: dc = 612 mV        (34 %), step = 36 mV           (2 %)
+    dc: dc = 648 mV        (36 %), step = 36 mV           (2 %)
+    dc: dc = 684 mV        (38 %), step = 36 mV           (2 %)
+    dc: dc = 720 mV        (40 %), step = 36 mV           (2 %)
+    dc: dc = 756 mV        (42 %), step = 36 mV           (2 %)
+    dc: dc = 792 mV        (44 %), step = 36 mV           (2 %)
+    dc: dc = 828 mV        (46 %), step = 36 mV           (2 %)
+    dc: dc = 864 mV        (48 %), step = 36 mV           (2 %)
+    dc: dc = 900 mV        (50 %), step = 36 mV           (2 %)
+    dc: dc = 936 mV        (52 %), step = 36 mV           (2 %)
+    dc: dc = 972 mV        (54 %), step = 36 mV           (2 %)
+    dc: dc = 1.008 V       (56 %), step = 36 mV           (2 %)
+    dc: dc = 1.044 V       (58 %), step = 36 mV           (2 %)
+    dc: dc = 1.08 V        (60 %), step = 36 mV           (2 %)
+    dc: dc = 1.116 V       (62 %), step = 36 mV           (2 %)
+    dc: dc = 1.152 V       (64 %), step = 36 mV           (2 %)
+    dc: dc = 1.188 V       (66 %), step = 36 mV           (2 %)
+    dc: dc = 1.224 V       (68 %), step = 36 mV           (2 %)
+    dc: dc = 1.26 V        (70 %), step = 36 mV           (2 %)
+    dc: dc = 1.296 V       (72 %), step = 36 mV           (2 %)
+    dc: dc = 1.332 V       (74 %), step = 36 mV           (2 %)
+    dc: dc = 1.368 V       (76 %), step = 36 mV           (2 %)
+    dc: dc = 1.404 V       (78 %), step = 36 mV           (2 %)
+    dc: dc = 1.44 V        (80 %), step = 36 mV           (2 %)
+    dc: dc = 1.476 V       (82 %), step = 36 mV           (2 %)
+    dc: dc = 1.512 V       (84 %), step = 36 mV           (2 %)
+    dc: dc = 1.548 V       (86 %), step = 36 mV           (2 %)
+    dc: dc = 1.584 V       (88 %), step = 36 mV           (2 %)
+    dc: dc = 1.62 V        (90 %), step = 36 mV           (2 %)
+    dc: dc = 1.656 V       (92 %), step = 36 mV           (2 %)
+    dc: dc = 1.692 V       (94 %), step = 36 mV           (2 %)
+    dc: dc = 1.728 V       (96 %), step = 36 mV           (2 %)
+    dc: dc = 1.764 V       (98 %), step = 36 mV           (2 %)
+    dc: dc = 1.8 V        (100 %), step = 36 mV           (2 %)
+
+Maximum value achieved for any signal of each quantity: 
+V: V(in) = 1.8 V
+I: I(VDD:p) = 877.9 uA
+DC simulation time: CPU = 2.909 ms, elapsed = 7.58505 ms.
+
+Notice from spectre at dc = 1.8 V during DC analysis `dc'.
+    The value of parameter 'dc' has been reset to the original value 0.68.
+
+Total time required for dc analysis `dc': CPU = 2.932 ms, elapsed = 7.60698 ms.
+Time accumulated: CPU = 180.651 ms, elapsed = 1.11021 s.
+Peak resident memory used = 123 Mbytes.
+
+modelParameter: writing model parameter values to rawfile.
+
+Opening the PSF file ../psf/modelParameter.info ...
+element: writing instance parameter values to rawfile.
+
+Opening the PSF file ../psf/element.info ...
+outputParameter: writing output parameter values to rawfile.
+
+Opening the PSF file ../psf/outputParameter.info ...
+designParamVals: writing netlist parameters to rawfile.
+
+Opening the PSF file ../psf/designParamVals.info ...
+primitives: writing primitives to rawfile.
+
+Opening the PSF file ../psf/primitives.info.primitives ...
+subckts: writing subcircuits to rawfile.
+
+Opening the PSF file ../psf/subckts.info.subckts ...
+
+Aggregate audit (12:00:26 PM, Mon Sep 20, 2021):
+Time used: CPU = 212 ms, elapsed = 883 s (14m  43.2s), util. = 24e-03%.
+Time spent in licensing: elapsed = 120 ms.
+Peak memory used = 125 Mbytes.
+Simulation started at: 11:45:43 AM, Mon Sep 20, 2021, ended at: 12:00:26 PM, Mon Sep 20, 2021, with elapsed time (wall clock): 883 s (14m  43.2s).
+spectre completes with 0 errors, 1 warning, and 2 notices.

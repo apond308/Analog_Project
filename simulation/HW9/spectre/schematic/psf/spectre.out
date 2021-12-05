@@ -1,0 +1,878 @@
+
+Spectre (R) Circuit Simulator
+Version 20.1.0.126.isr3 64bit -- 16 Jan 2021
+Copyright (C) 1989-2020 Cadence Design Systems, Inc. All rights reserved worldwide. Cadence and Spectre are registered trademarks of Cadence Design Systems, Inc. All others are the property of their respective holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
+
+User: u0666767   Host: lnissrv4   HostID: 629BAC6F   PID: 1914690
+Memory  available: 423.3776 GB  physical: 539.6305 GB
+Linux   : Red Hat Enterprise Linux release 8.4 (Ootpa)
+CPU Type: Intel(R) Xeon(R) Gold 6142 CPU @ 2.60GHz
+        Socket: Processors [Frequency] (Hyperthreaded Processor)
+        0:       0 [1842.9] ( 32 ),  1 [1491.0] ( 33 ),  2 [1391.9] ( 34 )
+                 3 [1487.9] ( 35 ),  4 [1401.8] ( 36 ),  5 [1251.4] ( 37 )
+                 6 [1476.7] ( 38 ),  7 [1296.1] ( 39 ),  8 [1288.9] ( 40 )
+                 9 [1493.1] ( 41 ), 10 [1000.3] ( 42 ), 11 [1256.5] ( 43 )
+                12 [1565.6] ( 44 ), 13 [2004.5] ( 45 ), 14 [1273.7] ( 46 )
+                15 [2219.7] ( 47 )
+        1:      16 [1875.2] ( 48 ), 17 [3336.8] ( 49 ), 18 [1722.4] ( 50 )
+                19 [3393.7] ( 51 ), 20 [1794.6] ( 52 ), 21 [1580.8] ( 53 )
+                22 [2204.5] ( 54 ), 23 [2343.1] ( 55 ), 24 [2251.1] ( 56 )
+                25 [1734.1] ( 57 ), 26 [2255.1] ( 58 ), 27 [3385.7] ( 59 )
+                28 [1906.3] ( 60 ), 29 [3299.3] ( 61 ), 30 [3303.0] ( 62 )
+                31 [3303.6] ( 63 )
+        
+System load averages (1min, 5min, 15min) : 1.1 %, 1.5 %, 3.3 %
+Hyperthreading is enabled
+HPC is enabled
+
+
+Simulating `input.scs' on lnissrv4 at 8:25:19 PM, Wed Nov 10, 2021 (process id: 1914690).
+Current working directory: /home/u0666767/ECE6720_F21/simulation/HW9/spectre/schematic/netlist
+Environment variable:
+    SPECTRE_DEFAULTS=-E
+Command line:
+    /uusoc/facility/cad_tools/Cadence/SPECTRE201/tools/bin/spectre -64  \
+        input.scs +escchars +log ../psf/spectre.out -format psfxl -raw  \
+        ../psf +aps +lqtimeout 900 -maxw 5 -maxn 5 -env ade
+
+Loading /uusoc/facility/cad_tools/Cadence/SPECTRE201/tools.lnx86/cmi/lib/64bit/5.0/libinfineon_sh.so ...
+Loading /uusoc/facility/cad_tools/Cadence/SPECTRE201/tools.lnx86/cmi/lib/64bit/5.0/libphilips_o_sh.so ...
+Loading /uusoc/facility/cad_tools/Cadence/SPECTRE201/tools.lnx86/cmi/lib/64bit/5.0/libphilips_sh.so ...
+Loading /uusoc/facility/cad_tools/Cadence/SPECTRE201/tools.lnx86/cmi/lib/64bit/5.0/libsparam_sh.so ...
+Loading /uusoc/facility/cad_tools/Cadence/SPECTRE201/tools.lnx86/cmi/lib/64bit/5.0/libstmodels_sh.so ...
+Reading file:  /home/u0666767/ECE6720_F21/simulation/HW9/spectre/schematic/netlist/input.scs
+Reading file:  /uusoc/facility/cad_tools/Cadence/SPECTRE201/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file:  /usr/include/stdc-predef.h
+Reading file:  /home/AMSICtools/models/Generic180nm.mod
+Time for NDB Parsing: CPU = 65.831 ms, elapsed = 375.818 ms.
+Time accumulated: CPU = 143.503 ms, elapsed = 375.827 ms.
+Peak resident memory used = 110 Mbytes.
+
+Time for Elaboration: CPU = 18.618 ms, elapsed = 19.675 ms.
+Time accumulated: CPU = 162.219 ms, elapsed = 395.6 ms.
+Peak resident memory used = 117 Mbytes.
+
+
+Warning from spectre during hierarchy flattening.
+    WARNING (SPECTRE-17101): The value 'psf' specified for the 'checklimitdest' option will no longer be supported in future releases. Use 'spectre -h' to see other recommended values for the 'checklimitdest' option.
+
+
+Time for EDB Visiting: CPU = 718 us, elapsed = 723.124 us.
+Time accumulated: CPU = 163.018 ms, elapsed = 396.404 ms.
+Peak resident memory used = 118 Mbytes.
+
+
+Notice from spectre during initial setup.
+    Multithreading is disabled due to the size of the design being too small.
+
+
+Global user options:
+         psfversion = 1.4.0
+            vabstol = 1e-06
+            iabstol = 1e-12
+               temp = 27
+               gmin = 1e-12
+             rforce = 1
+           maxnotes = 5
+           maxwarns = 5
+             digits = 5
+               cols = 80
+             pivrel = 0.001
+           sensfile = ../psf/sens.output
+     checklimitdest = psf
+               save = allpub
+             reltol = 0.001
+               tnom = 27
+             scalem = 1
+              scale = 1
+
+Scoped user options:
+
+Circuit inventory:
+              nodes 8
+            bsim3v3 1     
+          capacitor 2     
+             iprobe 1     
+           resistor 4     
+               vcvs 2     
+            vsource 2     
+
+Analysis and control statement inventory:
+                 dc 1     
+               info 7     
+                stb 1     
+
+Output statements:
+             .probe 0     
+           .measure 0     
+               save 1     
+
+
+Notice from spectre during initial setup.
+    APS enabled.
+
+Time for parsing: CPU = 2.542 ms, elapsed = 17.5629 ms.
+Time accumulated: CPU = 165.637 ms, elapsed = 414.044 ms.
+Peak resident memory used = 120 Mbytes.
+
+~~~~~~~~~~~~~~~~~~~~~~
+Pre-Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+
+******************
+DC Analysis `dcOp'
+******************
+
+Opening the PSF file ../psf/dcOp.dc ...
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+    rabsshort = 1 mOhm
+
+Maximum value achieved for any signal of each quantity: 
+V: V(I0.voutraw) = 1.853 V
+I: I(V0:p) = 471.4 uA
+Convergence achieved in 7 iterations.
+DC simulation time: CPU = 2.02 ms, elapsed = 22.8231 ms.
+Total time required for dc analysis `dcOp': CPU = 2.06 ms, elapsed = 22.8629 ms.
+Time accumulated: CPU = 172.263 ms, elapsed = 444.28 ms.
+Peak resident memory used = 123 Mbytes.
+
+dcOpInfo: writing operating point information to rawfile.
+
+Opening the PSF file ../psf/dcOpInfo.info ...
+
+**************************************************
+Stability Analysis `stb': freq = (1 kHz -> 10 GHz)
+**************************************************
+
+Notice from spectre during STB analysis `stb'.
+    Operating points will not be recomputed: the circuit and conditions were not changed since previous analysis.
+
+    stb: freq = 1.514 kHz   (2.57 %), step = 34.45 Hz     (143 m%)
+    stb: freq = 1.549 kHz   (2.71 %), step = 35.26 Hz     (143 m%)
+    stb: freq = 1.585 kHz   (2.86 %), step = 36.08 Hz     (143 m%)
+    stb: freq = 1.622 kHz      (3 %), step = 36.92 Hz     (143 m%)
+    stb: freq = 1.66 kHz    (3.14 %), step = 37.78 Hz     (143 m%)
+    stb: freq = 1.698 kHz   (3.29 %), step = 38.66 Hz     (143 m%)
+    stb: freq = 1.738 kHz   (3.43 %), step = 39.56 Hz     (143 m%)
+    stb: freq = 1.778 kHz   (3.57 %), step = 40.48 Hz     (143 m%)
+    stb: freq = 1.82 kHz    (3.71 %), step = 41.42 Hz     (143 m%)
+    stb: freq = 1.862 kHz   (3.86 %), step = 42.39 Hz     (143 m%)
+    stb: freq = 1.905 kHz      (4 %), step = 43.37 Hz     (143 m%)
+    stb: freq = 1.95 kHz    (4.14 %), step = 44.38 Hz     (143 m%)
+    stb: freq = 1.995 kHz   (4.29 %), step = 45.42 Hz     (143 m%)
+    stb: freq = 2.042 kHz   (4.43 %), step = 46.48 Hz     (143 m%)
+    stb: freq = 2.089 kHz   (4.57 %), step = 47.56 Hz     (143 m%)
+    stb: freq = 2.138 kHz   (4.71 %), step = 48.67 Hz     (143 m%)
+    stb: freq = 2.188 kHz   (4.86 %), step = 49.8 Hz      (143 m%)
+    stb: freq = 2.239 kHz      (5 %), step = 50.96 Hz     (143 m%)
+    stb: freq = 2.291 kHz   (5.14 %), step = 52.15 Hz     (143 m%)
+    stb: freq = 2.344 kHz   (5.29 %), step = 53.36 Hz     (143 m%)
+    stb: freq = 2.399 kHz   (5.43 %), step = 54.6 Hz      (143 m%)
+    stb: freq = 2.455 kHz   (5.57 %), step = 55.88 Hz     (143 m%)
+    stb: freq = 2.512 kHz   (5.71 %), step = 57.18 Hz     (143 m%)
+    stb: freq = 2.57 kHz    (5.86 %), step = 58.51 Hz     (143 m%)
+    stb: freq = 2.63 kHz       (6 %), step = 59.87 Hz     (143 m%)
+    stb: freq = 2.692 kHz   (6.14 %), step = 61.27 Hz     (143 m%)
+    stb: freq = 2.754 kHz   (6.29 %), step = 62.69 Hz     (143 m%)
+    stb: freq = 2.818 kHz   (6.43 %), step = 64.15 Hz     (143 m%)
+    stb: freq = 2.884 kHz   (6.57 %), step = 65.65 Hz     (143 m%)
+    stb: freq = 2.951 kHz   (6.71 %), step = 67.18 Hz     (143 m%)
+    stb: freq = 3.02 kHz    (6.86 %), step = 68.74 Hz     (143 m%)
+    stb: freq = 3.09 kHz       (7 %), step = 70.34 Hz     (143 m%)
+    stb: freq = 3.162 kHz   (7.14 %), step = 71.98 Hz     (143 m%)
+    stb: freq = 3.236 kHz   (7.29 %), step = 73.66 Hz     (143 m%)
+    stb: freq = 3.311 kHz   (7.43 %), step = 75.37 Hz     (143 m%)
+    stb: freq = 3.388 kHz   (7.57 %), step = 77.13 Hz     (143 m%)
+    stb: freq = 3.467 kHz   (7.71 %), step = 78.93 Hz     (143 m%)
+    stb: freq = 3.548 kHz   (7.86 %), step = 80.77 Hz     (143 m%)
+    stb: freq = 3.631 kHz      (8 %), step = 82.65 Hz     (143 m%)
+    stb: freq = 3.715 kHz   (8.14 %), step = 84.57 Hz     (143 m%)
+    stb: freq = 3.802 kHz   (8.29 %), step = 86.54 Hz     (143 m%)
+    stb: freq = 3.89 kHz    (8.43 %), step = 88.56 Hz     (143 m%)
+    stb: freq = 3.981 kHz   (8.57 %), step = 90.62 Hz     (143 m%)
+    stb: freq = 4.074 kHz   (8.71 %), step = 92.73 Hz     (143 m%)
+    stb: freq = 4.169 kHz   (8.86 %), step = 94.89 Hz     (143 m%)
+    stb: freq = 4.266 kHz      (9 %), step = 97.1 Hz      (143 m%)
+    stb: freq = 4.365 kHz   (9.14 %), step = 99.36 Hz     (143 m%)
+    stb: freq = 4.467 kHz   (9.29 %), step = 101.7 Hz     (143 m%)
+    stb: freq = 4.571 kHz   (9.43 %), step = 104 Hz       (143 m%)
+    stb: freq = 4.677 kHz   (9.57 %), step = 106.5 Hz     (143 m%)
+    stb: freq = 4.786 kHz   (9.71 %), step = 108.9 Hz     (143 m%)
+    stb: freq = 4.898 kHz   (9.86 %), step = 111.5 Hz     (143 m%)
+    stb: freq = 5.012 kHz     (10 %), step = 114.1 Hz     (143 m%)
+    stb: freq = 5.129 kHz   (10.1 %), step = 116.7 Hz     (143 m%)
+    stb: freq = 5.248 kHz   (10.3 %), step = 119.5 Hz     (143 m%)
+    stb: freq = 5.37 kHz    (10.4 %), step = 122.2 Hz     (143 m%)
+    stb: freq = 5.495 kHz   (10.6 %), step = 125.1 Hz     (143 m%)
+    stb: freq = 5.623 kHz   (10.7 %), step = 128 Hz       (143 m%)
+    stb: freq = 5.754 kHz   (10.9 %), step = 131 Hz       (143 m%)
+    stb: freq = 5.888 kHz     (11 %), step = 134 Hz       (143 m%)
+    stb: freq = 6.026 kHz   (11.1 %), step = 137.2 Hz     (143 m%)
+    stb: freq = 6.166 kHz   (11.3 %), step = 140.4 Hz     (143 m%)
+    stb: freq = 6.31 kHz    (11.4 %), step = 143.6 Hz     (143 m%)
+    stb: freq = 6.457 kHz   (11.6 %), step = 147 Hz       (143 m%)
+    stb: freq = 6.607 kHz   (11.7 %), step = 150.4 Hz     (143 m%)
+    stb: freq = 6.761 kHz   (11.9 %), step = 153.9 Hz     (143 m%)
+    stb: freq = 6.918 kHz     (12 %), step = 157.5 Hz     (143 m%)
+    stb: freq = 7.079 kHz   (12.1 %), step = 161.1 Hz     (143 m%)
+    stb: freq = 7.244 kHz   (12.3 %), step = 164.9 Hz     (143 m%)
+    stb: freq = 7.413 kHz   (12.4 %), step = 168.7 Hz     (143 m%)
+    stb: freq = 7.586 kHz   (12.6 %), step = 172.7 Hz     (143 m%)
+    stb: freq = 7.762 kHz   (12.7 %), step = 176.7 Hz     (143 m%)
+    stb: freq = 7.943 kHz   (12.9 %), step = 180.8 Hz     (143 m%)
+    stb: freq = 8.128 kHz     (13 %), step = 185 Hz       (143 m%)
+    stb: freq = 8.318 kHz   (13.1 %), step = 189.3 Hz     (143 m%)
+    stb: freq = 8.511 kHz   (13.3 %), step = 193.7 Hz     (143 m%)
+    stb: freq = 8.71 kHz    (13.4 %), step = 198.3 Hz     (143 m%)
+    stb: freq = 8.913 kHz   (13.6 %), step = 202.9 Hz     (143 m%)
+    stb: freq = 9.12 kHz    (13.7 %), step = 207.6 Hz     (143 m%)
+    stb: freq = 9.333 kHz   (13.9 %), step = 212.4 Hz     (143 m%)
+    stb: freq = 9.55 kHz      (14 %), step = 217.4 Hz     (143 m%)
+    stb: freq = 9.772 kHz   (14.1 %), step = 222.4 Hz     (143 m%)
+    stb: freq = 10 kHz      (14.3 %), step = 227.6 Hz     (143 m%)
+    stb: freq = 10.23 kHz   (14.4 %), step = 232.9 Hz     (143 m%)
+    stb: freq = 10.47 kHz   (14.6 %), step = 238.4 Hz     (143 m%)
+    stb: freq = 10.72 kHz   (14.7 %), step = 243.9 Hz     (143 m%)
+    stb: freq = 10.96 kHz   (14.9 %), step = 249.6 Hz     (143 m%)
+    stb: freq = 11.22 kHz     (15 %), step = 255.4 Hz     (143 m%)
+    stb: freq = 11.48 kHz   (15.1 %), step = 261.4 Hz     (143 m%)
+    stb: freq = 11.75 kHz   (15.3 %), step = 267.4 Hz     (143 m%)
+    stb: freq = 12.02 kHz   (15.4 %), step = 273.7 Hz     (143 m%)
+    stb: freq = 12.3 kHz    (15.6 %), step = 280 Hz       (143 m%)
+    stb: freq = 12.59 kHz   (15.7 %), step = 286.6 Hz     (143 m%)
+    stb: freq = 12.88 kHz   (15.9 %), step = 293.2 Hz     (143 m%)
+    stb: freq = 13.18 kHz     (16 %), step = 300.1 Hz     (143 m%)
+    stb: freq = 13.49 kHz   (16.1 %), step = 307.1 Hz     (143 m%)
+    stb: freq = 13.8 kHz    (16.3 %), step = 314.2 Hz     (143 m%)
+    stb: freq = 14.13 kHz   (16.4 %), step = 321.5 Hz     (143 m%)
+    stb: freq = 14.45 kHz   (16.6 %), step = 329 Hz       (143 m%)
+    stb: freq = 14.79 kHz   (16.7 %), step = 336.7 Hz     (143 m%)
+    stb: freq = 15.14 kHz   (16.9 %), step = 344.5 Hz     (143 m%)
+    stb: freq = 15.49 kHz     (17 %), step = 352.6 Hz     (143 m%)
+    stb: freq = 15.85 kHz   (17.1 %), step = 360.8 Hz     (143 m%)
+    stb: freq = 16.22 kHz   (17.3 %), step = 369.2 Hz     (143 m%)
+    stb: freq = 16.6 kHz    (17.4 %), step = 377.8 Hz     (143 m%)
+    stb: freq = 16.98 kHz   (17.6 %), step = 386.6 Hz     (143 m%)
+    stb: freq = 17.38 kHz   (17.7 %), step = 395.6 Hz     (143 m%)
+    stb: freq = 17.78 kHz   (17.9 %), step = 404.8 Hz     (143 m%)
+    stb: freq = 18.2 kHz      (18 %), step = 414.2 Hz     (143 m%)
+    stb: freq = 18.62 kHz   (18.1 %), step = 423.9 Hz     (143 m%)
+    stb: freq = 19.05 kHz   (18.3 %), step = 433.7 Hz     (143 m%)
+    stb: freq = 19.5 kHz    (18.4 %), step = 443.8 Hz     (143 m%)
+    stb: freq = 19.95 kHz   (18.6 %), step = 454.2 Hz     (143 m%)
+    stb: freq = 20.42 kHz   (18.7 %), step = 464.8 Hz     (143 m%)
+    stb: freq = 20.89 kHz   (18.9 %), step = 475.6 Hz     (143 m%)
+    stb: freq = 21.38 kHz     (19 %), step = 486.7 Hz     (143 m%)
+    stb: freq = 21.88 kHz   (19.1 %), step = 498 Hz       (143 m%)
+    stb: freq = 22.39 kHz   (19.3 %), step = 509.6 Hz     (143 m%)
+    stb: freq = 22.91 kHz   (19.4 %), step = 521.5 Hz     (143 m%)
+    stb: freq = 23.44 kHz   (19.6 %), step = 533.6 Hz     (143 m%)
+    stb: freq = 23.99 kHz   (19.7 %), step = 546 Hz       (143 m%)
+    stb: freq = 24.55 kHz   (19.9 %), step = 558.8 Hz     (143 m%)
+    stb: freq = 25.12 kHz     (20 %), step = 571.8 Hz     (143 m%)
+    stb: freq = 25.7 kHz    (20.1 %), step = 585.1 Hz     (143 m%)
+    stb: freq = 26.3 kHz    (20.3 %), step = 598.7 Hz     (143 m%)
+    stb: freq = 26.92 kHz   (20.4 %), step = 612.7 Hz     (143 m%)
+    stb: freq = 27.54 kHz   (20.6 %), step = 626.9 Hz     (143 m%)
+    stb: freq = 28.18 kHz   (20.7 %), step = 641.5 Hz     (143 m%)
+    stb: freq = 28.84 kHz   (20.9 %), step = 656.5 Hz     (143 m%)
+    stb: freq = 29.51 kHz     (21 %), step = 671.8 Hz     (143 m%)
+    stb: freq = 30.2 kHz    (21.1 %), step = 687.4 Hz     (143 m%)
+    stb: freq = 30.9 kHz    (21.3 %), step = 703.4 Hz     (143 m%)
+    stb: freq = 31.62 kHz   (21.4 %), step = 719.8 Hz     (143 m%)
+    stb: freq = 32.36 kHz   (21.6 %), step = 736.6 Hz     (143 m%)
+    stb: freq = 33.11 kHz   (21.7 %), step = 753.7 Hz     (143 m%)
+    stb: freq = 33.88 kHz   (21.9 %), step = 771.3 Hz     (143 m%)
+    stb: freq = 34.67 kHz     (22 %), step = 789.3 Hz     (143 m%)
+    stb: freq = 35.48 kHz   (22.1 %), step = 807.7 Hz     (143 m%)
+    stb: freq = 36.31 kHz   (22.3 %), step = 826.5 Hz     (143 m%)
+    stb: freq = 37.15 kHz   (22.4 %), step = 845.7 Hz     (143 m%)
+    stb: freq = 38.02 kHz   (22.6 %), step = 865.4 Hz     (143 m%)
+    stb: freq = 38.9 kHz    (22.7 %), step = 885.6 Hz     (143 m%)
+    stb: freq = 39.81 kHz   (22.9 %), step = 906.2 Hz     (143 m%)
+    stb: freq = 40.74 kHz     (23 %), step = 927.3 Hz     (143 m%)
+    stb: freq = 41.69 kHz   (23.1 %), step = 948.9 Hz     (143 m%)
+    stb: freq = 42.66 kHz   (23.3 %), step = 971 Hz       (143 m%)
+    stb: freq = 43.65 kHz   (23.4 %), step = 993.6 Hz     (143 m%)
+    stb: freq = 44.67 kHz   (23.6 %), step = 1.017 kHz    (143 m%)
+    stb: freq = 45.71 kHz   (23.7 %), step = 1.04 kHz     (143 m%)
+    stb: freq = 46.77 kHz   (23.9 %), step = 1.065 kHz    (143 m%)
+    stb: freq = 47.86 kHz     (24 %), step = 1.089 kHz    (143 m%)
+    stb: freq = 48.98 kHz   (24.1 %), step = 1.115 kHz    (143 m%)
+    stb: freq = 50.12 kHz   (24.3 %), step = 1.141 kHz    (143 m%)
+    stb: freq = 51.29 kHz   (24.4 %), step = 1.167 kHz    (143 m%)
+    stb: freq = 52.48 kHz   (24.6 %), step = 1.195 kHz    (143 m%)
+    stb: freq = 53.7 kHz    (24.7 %), step = 1.222 kHz    (143 m%)
+    stb: freq = 54.95 kHz   (24.9 %), step = 1.251 kHz    (143 m%)
+    stb: freq = 56.23 kHz     (25 %), step = 1.28 kHz     (143 m%)
+    stb: freq = 57.54 kHz   (25.1 %), step = 1.31 kHz     (143 m%)
+    stb: freq = 58.88 kHz   (25.3 %), step = 1.34 kHz     (143 m%)
+    stb: freq = 60.26 kHz   (25.4 %), step = 1.372 kHz    (143 m%)
+    stb: freq = 61.66 kHz   (25.6 %), step = 1.404 kHz    (143 m%)
+    stb: freq = 63.1 kHz    (25.7 %), step = 1.436 kHz    (143 m%)
+    stb: freq = 64.57 kHz   (25.9 %), step = 1.47 kHz     (143 m%)
+    stb: freq = 66.07 kHz     (26 %), step = 1.504 kHz    (143 m%)
+    stb: freq = 67.61 kHz   (26.1 %), step = 1.539 kHz    (143 m%)
+    stb: freq = 69.18 kHz   (26.3 %), step = 1.575 kHz    (143 m%)
+    stb: freq = 70.79 kHz   (26.4 %), step = 1.611 kHz    (143 m%)
+    stb: freq = 72.44 kHz   (26.6 %), step = 1.649 kHz    (143 m%)
+    stb: freq = 74.13 kHz   (26.7 %), step = 1.687 kHz    (143 m%)
+    stb: freq = 75.86 kHz   (26.9 %), step = 1.727 kHz    (143 m%)
+    stb: freq = 77.62 kHz     (27 %), step = 1.767 kHz    (143 m%)
+    stb: freq = 79.43 kHz   (27.1 %), step = 1.808 kHz    (143 m%)
+    stb: freq = 81.28 kHz   (27.3 %), step = 1.85 kHz     (143 m%)
+    stb: freq = 83.18 kHz   (27.4 %), step = 1.893 kHz    (143 m%)
+    stb: freq = 85.11 kHz   (27.6 %), step = 1.937 kHz    (143 m%)
+    stb: freq = 87.1 kHz    (27.7 %), step = 1.983 kHz    (143 m%)
+    stb: freq = 89.13 kHz   (27.9 %), step = 2.029 kHz    (143 m%)
+    stb: freq = 91.2 kHz      (28 %), step = 2.076 kHz    (143 m%)
+    stb: freq = 93.33 kHz   (28.1 %), step = 2.124 kHz    (143 m%)
+    stb: freq = 95.5 kHz    (28.3 %), step = 2.174 kHz    (143 m%)
+    stb: freq = 97.72 kHz   (28.4 %), step = 2.224 kHz    (143 m%)
+    stb: freq = 100 kHz     (28.6 %), step = 2.276 kHz    (143 m%)
+    stb: freq = 102.3 kHz   (28.7 %), step = 2.329 kHz    (143 m%)
+    stb: freq = 104.7 kHz   (28.9 %), step = 2.384 kHz    (143 m%)
+    stb: freq = 107.2 kHz     (29 %), step = 2.439 kHz    (143 m%)
+    stb: freq = 109.6 kHz   (29.1 %), step = 2.496 kHz    (143 m%)
+    stb: freq = 112.2 kHz   (29.3 %), step = 2.554 kHz    (143 m%)
+    stb: freq = 114.8 kHz   (29.4 %), step = 2.614 kHz    (143 m%)
+    stb: freq = 117.5 kHz   (29.6 %), step = 2.674 kHz    (143 m%)
+    stb: freq = 120.2 kHz   (29.7 %), step = 2.737 kHz    (143 m%)
+    stb: freq = 123 kHz     (29.9 %), step = 2.8 kHz      (143 m%)
+    stb: freq = 125.9 kHz     (30 %), step = 2.866 kHz    (143 m%)
+    stb: freq = 128.8 kHz   (30.1 %), step = 2.932 kHz    (143 m%)
+    stb: freq = 131.8 kHz   (30.3 %), step = 3.001 kHz    (143 m%)
+    stb: freq = 134.9 kHz   (30.4 %), step = 3.071 kHz    (143 m%)
+    stb: freq = 138 kHz     (30.6 %), step = 3.142 kHz    (143 m%)
+    stb: freq = 141.3 kHz   (30.7 %), step = 3.215 kHz    (143 m%)
+    stb: freq = 144.5 kHz   (30.9 %), step = 3.29 kHz     (143 m%)
+    stb: freq = 147.9 kHz     (31 %), step = 3.367 kHz    (143 m%)
+    stb: freq = 151.4 kHz   (31.1 %), step = 3.445 kHz    (143 m%)
+    stb: freq = 154.9 kHz   (31.3 %), step = 3.526 kHz    (143 m%)
+    stb: freq = 158.5 kHz   (31.4 %), step = 3.608 kHz    (143 m%)
+    stb: freq = 162.2 kHz   (31.6 %), step = 3.692 kHz    (143 m%)
+    stb: freq = 166 kHz     (31.7 %), step = 3.778 kHz    (143 m%)
+    stb: freq = 169.8 kHz   (31.9 %), step = 3.866 kHz    (143 m%)
+    stb: freq = 173.8 kHz     (32 %), step = 3.956 kHz    (143 m%)
+    stb: freq = 177.8 kHz   (32.1 %), step = 4.048 kHz    (143 m%)
+    stb: freq = 182 kHz     (32.3 %), step = 4.142 kHz    (143 m%)
+    stb: freq = 186.2 kHz   (32.4 %), step = 4.239 kHz    (143 m%)
+    stb: freq = 190.5 kHz   (32.6 %), step = 4.337 kHz    (143 m%)
+    stb: freq = 195 kHz     (32.7 %), step = 4.438 kHz    (143 m%)
+    stb: freq = 199.5 kHz   (32.9 %), step = 4.542 kHz    (143 m%)
+    stb: freq = 204.2 kHz     (33 %), step = 4.648 kHz    (143 m%)
+    stb: freq = 208.9 kHz   (33.1 %), step = 4.756 kHz    (143 m%)
+    stb: freq = 213.8 kHz   (33.3 %), step = 4.867 kHz    (143 m%)
+    stb: freq = 218.8 kHz   (33.4 %), step = 4.98 kHz     (143 m%)
+    stb: freq = 223.9 kHz   (33.6 %), step = 5.096 kHz    (143 m%)
+    stb: freq = 229.1 kHz   (33.7 %), step = 5.215 kHz    (143 m%)
+    stb: freq = 234.4 kHz   (33.9 %), step = 5.336 kHz    (143 m%)
+    stb: freq = 239.9 kHz     (34 %), step = 5.46 kHz     (143 m%)
+    stb: freq = 245.5 kHz   (34.1 %), step = 5.588 kHz    (143 m%)
+    stb: freq = 251.2 kHz   (34.3 %), step = 5.718 kHz    (143 m%)
+    stb: freq = 257 kHz     (34.4 %), step = 5.851 kHz    (143 m%)
+    stb: freq = 263 kHz     (34.6 %), step = 5.987 kHz    (143 m%)
+    stb: freq = 269.2 kHz   (34.7 %), step = 6.127 kHz    (143 m%)
+    stb: freq = 275.4 kHz   (34.9 %), step = 6.269 kHz    (143 m%)
+    stb: freq = 281.8 kHz     (35 %), step = 6.415 kHz    (143 m%)
+    stb: freq = 288.4 kHz   (35.1 %), step = 6.565 kHz    (143 m%)
+    stb: freq = 295.1 kHz   (35.3 %), step = 6.718 kHz    (143 m%)
+    stb: freq = 302 kHz     (35.4 %), step = 6.874 kHz    (143 m%)
+    stb: freq = 309 kHz     (35.6 %), step = 7.034 kHz    (143 m%)
+    stb: freq = 316.2 kHz   (35.7 %), step = 7.198 kHz    (143 m%)
+    stb: freq = 323.6 kHz   (35.9 %), step = 7.366 kHz    (143 m%)
+    stb: freq = 331.1 kHz     (36 %), step = 7.537 kHz    (143 m%)
+    stb: freq = 338.8 kHz   (36.1 %), step = 7.713 kHz    (143 m%)
+    stb: freq = 346.7 kHz   (36.3 %), step = 7.893 kHz    (143 m%)
+    stb: freq = 354.8 kHz   (36.4 %), step = 8.077 kHz    (143 m%)
+    stb: freq = 363.1 kHz   (36.6 %), step = 8.265 kHz    (143 m%)
+    stb: freq = 371.5 kHz   (36.7 %), step = 8.457 kHz    (143 m%)
+    stb: freq = 380.2 kHz   (36.9 %), step = 8.654 kHz    (143 m%)
+    stb: freq = 389 kHz       (37 %), step = 8.856 kHz    (143 m%)
+    stb: freq = 398.1 kHz   (37.1 %), step = 9.062 kHz    (143 m%)
+    stb: freq = 407.4 kHz   (37.3 %), step = 9.273 kHz    (143 m%)
+    stb: freq = 416.9 kHz   (37.4 %), step = 9.489 kHz    (143 m%)
+    stb: freq = 426.6 kHz   (37.6 %), step = 9.71 kHz     (143 m%)
+    stb: freq = 436.5 kHz   (37.7 %), step = 9.936 kHz    (143 m%)
+    stb: freq = 446.7 kHz   (37.9 %), step = 10.17 kHz    (143 m%)
+    stb: freq = 457.1 kHz     (38 %), step = 10.4 kHz     (143 m%)
+    stb: freq = 467.7 kHz   (38.1 %), step = 10.65 kHz    (143 m%)
+    stb: freq = 478.6 kHz   (38.3 %), step = 10.89 kHz    (143 m%)
+    stb: freq = 489.8 kHz   (38.4 %), step = 11.15 kHz    (143 m%)
+    stb: freq = 501.2 kHz   (38.6 %), step = 11.41 kHz    (143 m%)
+    stb: freq = 512.9 kHz   (38.7 %), step = 11.67 kHz    (143 m%)
+    stb: freq = 524.8 kHz   (38.9 %), step = 11.95 kHz    (143 m%)
+    stb: freq = 537 kHz       (39 %), step = 12.22 kHz    (143 m%)
+    stb: freq = 549.5 kHz   (39.1 %), step = 12.51 kHz    (143 m%)
+    stb: freq = 562.3 kHz   (39.3 %), step = 12.8 kHz     (143 m%)
+    stb: freq = 575.4 kHz   (39.4 %), step = 13.1 kHz     (143 m%)
+    stb: freq = 588.8 kHz   (39.6 %), step = 13.4 kHz     (143 m%)
+    stb: freq = 602.6 kHz   (39.7 %), step = 13.72 kHz    (143 m%)
+    stb: freq = 616.6 kHz   (39.9 %), step = 14.04 kHz    (143 m%)
+    stb: freq = 631 kHz       (40 %), step = 14.36 kHz    (143 m%)
+    stb: freq = 645.7 kHz   (40.1 %), step = 14.7 kHz     (143 m%)
+    stb: freq = 660.7 kHz   (40.3 %), step = 15.04 kHz    (143 m%)
+    stb: freq = 676.1 kHz   (40.4 %), step = 15.39 kHz    (143 m%)
+    stb: freq = 691.8 kHz   (40.6 %), step = 15.75 kHz    (143 m%)
+    stb: freq = 707.9 kHz   (40.7 %), step = 16.11 kHz    (143 m%)
+    stb: freq = 724.4 kHz   (40.9 %), step = 16.49 kHz    (143 m%)
+    stb: freq = 741.3 kHz     (41 %), step = 16.87 kHz    (143 m%)
+    stb: freq = 758.6 kHz   (41.1 %), step = 17.27 kHz    (143 m%)
+    stb: freq = 776.2 kHz   (41.3 %), step = 17.67 kHz    (143 m%)
+    stb: freq = 794.3 kHz   (41.4 %), step = 18.08 kHz    (143 m%)
+    stb: freq = 812.8 kHz   (41.6 %), step = 18.5 kHz     (143 m%)
+    stb: freq = 831.8 kHz   (41.7 %), step = 18.93 kHz    (143 m%)
+    stb: freq = 851.1 kHz   (41.9 %), step = 19.37 kHz    (143 m%)
+    stb: freq = 871 kHz       (42 %), step = 19.83 kHz    (143 m%)
+    stb: freq = 891.3 kHz   (42.1 %), step = 20.29 kHz    (143 m%)
+    stb: freq = 912 kHz     (42.3 %), step = 20.76 kHz    (143 m%)
+    stb: freq = 933.3 kHz   (42.4 %), step = 21.24 kHz    (143 m%)
+    stb: freq = 955 kHz     (42.6 %), step = 21.74 kHz    (143 m%)
+    stb: freq = 977.2 kHz   (42.7 %), step = 22.24 kHz    (143 m%)
+    stb: freq = 1 MHz       (42.9 %), step = 22.76 kHz    (143 m%)
+    stb: freq = 1.023 MHz     (43 %), step = 23.29 kHz    (143 m%)
+    stb: freq = 1.047 MHz   (43.1 %), step = 23.84 kHz    (143 m%)
+    stb: freq = 1.072 MHz   (43.3 %), step = 24.39 kHz    (143 m%)
+    stb: freq = 1.096 MHz   (43.4 %), step = 24.96 kHz    (143 m%)
+    stb: freq = 1.122 MHz   (43.6 %), step = 25.54 kHz    (143 m%)
+    stb: freq = 1.148 MHz   (43.7 %), step = 26.14 kHz    (143 m%)
+    stb: freq = 1.175 MHz   (43.9 %), step = 26.74 kHz    (143 m%)
+    stb: freq = 1.202 MHz     (44 %), step = 27.37 kHz    (143 m%)
+    stb: freq = 1.23 MHz    (44.1 %), step = 28 kHz       (143 m%)
+    stb: freq = 1.259 MHz   (44.3 %), step = 28.66 kHz    (143 m%)
+    stb: freq = 1.288 MHz   (44.4 %), step = 29.32 kHz    (143 m%)
+    stb: freq = 1.318 MHz   (44.6 %), step = 30.01 kHz    (143 m%)
+    stb: freq = 1.349 MHz   (44.7 %), step = 30.71 kHz    (143 m%)
+    stb: freq = 1.38 MHz    (44.9 %), step = 31.42 kHz    (143 m%)
+    stb: freq = 1.413 MHz     (45 %), step = 32.15 kHz    (143 m%)
+    stb: freq = 1.445 MHz   (45.1 %), step = 32.9 kHz     (143 m%)
+    stb: freq = 1.479 MHz   (45.3 %), step = 33.67 kHz    (143 m%)
+    stb: freq = 1.514 MHz   (45.4 %), step = 34.45 kHz    (143 m%)
+    stb: freq = 1.549 MHz   (45.6 %), step = 35.26 kHz    (143 m%)
+    stb: freq = 1.585 MHz   (45.7 %), step = 36.08 kHz    (143 m%)
+    stb: freq = 1.622 MHz   (45.9 %), step = 36.92 kHz    (143 m%)
+    stb: freq = 1.66 MHz      (46 %), step = 37.78 kHz    (143 m%)
+    stb: freq = 1.698 MHz   (46.1 %), step = 38.66 kHz    (143 m%)
+    stb: freq = 1.738 MHz   (46.3 %), step = 39.56 kHz    (143 m%)
+    stb: freq = 1.778 MHz   (46.4 %), step = 40.48 kHz    (143 m%)
+    stb: freq = 1.82 MHz    (46.6 %), step = 41.42 kHz    (143 m%)
+    stb: freq = 1.862 MHz   (46.7 %), step = 42.39 kHz    (143 m%)
+    stb: freq = 1.905 MHz   (46.9 %), step = 43.37 kHz    (143 m%)
+    stb: freq = 1.95 MHz      (47 %), step = 44.38 kHz    (143 m%)
+    stb: freq = 1.995 MHz   (47.1 %), step = 45.42 kHz    (143 m%)
+    stb: freq = 2.042 MHz   (47.3 %), step = 46.48 kHz    (143 m%)
+    stb: freq = 2.089 MHz   (47.4 %), step = 47.56 kHz    (143 m%)
+    stb: freq = 2.138 MHz   (47.6 %), step = 48.67 kHz    (143 m%)
+    stb: freq = 2.188 MHz   (47.7 %), step = 49.8 kHz     (143 m%)
+    stb: freq = 2.239 MHz   (47.9 %), step = 50.96 kHz    (143 m%)
+    stb: freq = 2.291 MHz     (48 %), step = 52.15 kHz    (143 m%)
+    stb: freq = 2.344 MHz   (48.1 %), step = 53.36 kHz    (143 m%)
+    stb: freq = 2.399 MHz   (48.3 %), step = 54.6 kHz     (143 m%)
+    stb: freq = 2.455 MHz   (48.4 %), step = 55.88 kHz    (143 m%)
+    stb: freq = 2.512 MHz   (48.6 %), step = 57.18 kHz    (143 m%)
+    stb: freq = 2.57 MHz    (48.7 %), step = 58.51 kHz    (143 m%)
+    stb: freq = 2.63 MHz    (48.9 %), step = 59.87 kHz    (143 m%)
+    stb: freq = 2.692 MHz     (49 %), step = 61.27 kHz    (143 m%)
+    stb: freq = 2.754 MHz   (49.1 %), step = 62.69 kHz    (143 m%)
+    stb: freq = 2.818 MHz   (49.3 %), step = 64.15 kHz    (143 m%)
+    stb: freq = 2.884 MHz   (49.4 %), step = 65.65 kHz    (143 m%)
+    stb: freq = 2.951 MHz   (49.6 %), step = 67.18 kHz    (143 m%)
+    stb: freq = 3.02 MHz    (49.7 %), step = 68.74 kHz    (143 m%)
+    stb: freq = 3.09 MHz    (49.9 %), step = 70.34 kHz    (143 m%)
+    stb: freq = 3.162 MHz     (50 %), step = 71.98 kHz    (143 m%)
+    stb: freq = 3.236 MHz   (50.1 %), step = 73.66 kHz    (143 m%)
+    stb: freq = 3.311 MHz   (50.3 %), step = 75.37 kHz    (143 m%)
+    stb: freq = 3.388 MHz   (50.4 %), step = 77.13 kHz    (143 m%)
+    stb: freq = 3.467 MHz   (50.6 %), step = 78.93 kHz    (143 m%)
+    stb: freq = 3.548 MHz   (50.7 %), step = 80.77 kHz    (143 m%)
+    stb: freq = 3.631 MHz   (50.9 %), step = 82.65 kHz    (143 m%)
+    stb: freq = 3.715 MHz     (51 %), step = 84.57 kHz    (143 m%)
+    stb: freq = 3.802 MHz   (51.1 %), step = 86.54 kHz    (143 m%)
+    stb: freq = 3.89 MHz    (51.3 %), step = 88.56 kHz    (143 m%)
+    stb: freq = 3.981 MHz   (51.4 %), step = 90.62 kHz    (143 m%)
+    stb: freq = 4.074 MHz   (51.6 %), step = 92.73 kHz    (143 m%)
+    stb: freq = 4.169 MHz   (51.7 %), step = 94.89 kHz    (143 m%)
+    stb: freq = 4.266 MHz   (51.9 %), step = 97.1 kHz     (143 m%)
+    stb: freq = 4.365 MHz     (52 %), step = 99.36 kHz    (143 m%)
+    stb: freq = 4.467 MHz   (52.1 %), step = 101.7 kHz    (143 m%)
+    stb: freq = 4.571 MHz   (52.3 %), step = 104 kHz      (143 m%)
+    stb: freq = 4.677 MHz   (52.4 %), step = 106.5 kHz    (143 m%)
+    stb: freq = 4.786 MHz   (52.6 %), step = 108.9 kHz    (143 m%)
+    stb: freq = 4.898 MHz   (52.7 %), step = 111.5 kHz    (143 m%)
+    stb: freq = 5.012 MHz   (52.9 %), step = 114.1 kHz    (143 m%)
+    stb: freq = 5.129 MHz     (53 %), step = 116.7 kHz    (143 m%)
+    stb: freq = 5.248 MHz   (53.1 %), step = 119.5 kHz    (143 m%)
+    stb: freq = 5.37 MHz    (53.3 %), step = 122.2 kHz    (143 m%)
+    stb: freq = 5.495 MHz   (53.4 %), step = 125.1 kHz    (143 m%)
+    stb: freq = 5.623 MHz   (53.6 %), step = 128 kHz      (143 m%)
+    stb: freq = 5.754 MHz   (53.7 %), step = 131 kHz      (143 m%)
+    stb: freq = 5.888 MHz   (53.9 %), step = 134 kHz      (143 m%)
+    stb: freq = 6.026 MHz     (54 %), step = 137.2 kHz    (143 m%)
+    stb: freq = 6.166 MHz   (54.1 %), step = 140.4 kHz    (143 m%)
+    stb: freq = 6.31 MHz    (54.3 %), step = 143.6 kHz    (143 m%)
+    stb: freq = 6.457 MHz   (54.4 %), step = 147 kHz      (143 m%)
+    stb: freq = 6.607 MHz   (54.6 %), step = 150.4 kHz    (143 m%)
+    stb: freq = 6.761 MHz   (54.7 %), step = 153.9 kHz    (143 m%)
+    stb: freq = 6.918 MHz   (54.9 %), step = 157.5 kHz    (143 m%)
+    stb: freq = 7.079 MHz     (55 %), step = 161.1 kHz    (143 m%)
+    stb: freq = 7.244 MHz   (55.1 %), step = 164.9 kHz    (143 m%)
+    stb: freq = 7.413 MHz   (55.3 %), step = 168.7 kHz    (143 m%)
+    stb: freq = 7.586 MHz   (55.4 %), step = 172.7 kHz    (143 m%)
+    stb: freq = 7.762 MHz   (55.6 %), step = 176.7 kHz    (143 m%)
+    stb: freq = 7.943 MHz   (55.7 %), step = 180.8 kHz    (143 m%)
+    stb: freq = 8.128 MHz   (55.9 %), step = 185 kHz      (143 m%)
+    stb: freq = 8.318 MHz     (56 %), step = 189.3 kHz    (143 m%)
+    stb: freq = 8.511 MHz   (56.1 %), step = 193.7 kHz    (143 m%)
+    stb: freq = 8.71 MHz    (56.3 %), step = 198.3 kHz    (143 m%)
+    stb: freq = 8.913 MHz   (56.4 %), step = 202.9 kHz    (143 m%)
+    stb: freq = 9.12 MHz    (56.6 %), step = 207.6 kHz    (143 m%)
+    stb: freq = 9.333 MHz   (56.7 %), step = 212.4 kHz    (143 m%)
+    stb: freq = 9.55 MHz    (56.9 %), step = 217.4 kHz    (143 m%)
+    stb: freq = 9.772 MHz     (57 %), step = 222.4 kHz    (143 m%)
+    stb: freq = 10 MHz      (57.1 %), step = 227.6 kHz    (143 m%)
+    stb: freq = 10.23 MHz   (57.3 %), step = 232.9 kHz    (143 m%)
+    stb: freq = 10.47 MHz   (57.4 %), step = 238.4 kHz    (143 m%)
+    stb: freq = 10.72 MHz   (57.6 %), step = 243.9 kHz    (143 m%)
+    stb: freq = 10.96 MHz   (57.7 %), step = 249.6 kHz    (143 m%)
+    stb: freq = 11.22 MHz   (57.9 %), step = 255.4 kHz    (143 m%)
+    stb: freq = 11.48 MHz     (58 %), step = 261.4 kHz    (143 m%)
+    stb: freq = 11.75 MHz   (58.1 %), step = 267.4 kHz    (143 m%)
+    stb: freq = 12.02 MHz   (58.3 %), step = 273.7 kHz    (143 m%)
+    stb: freq = 12.3 MHz    (58.4 %), step = 280 kHz      (143 m%)
+    stb: freq = 12.59 MHz   (58.6 %), step = 286.6 kHz    (143 m%)
+    stb: freq = 12.88 MHz   (58.7 %), step = 293.2 kHz    (143 m%)
+    stb: freq = 13.18 MHz   (58.9 %), step = 300.1 kHz    (143 m%)
+    stb: freq = 13.49 MHz     (59 %), step = 307.1 kHz    (143 m%)
+    stb: freq = 13.8 MHz    (59.1 %), step = 314.2 kHz    (143 m%)
+    stb: freq = 14.13 MHz   (59.3 %), step = 321.5 kHz    (143 m%)
+    stb: freq = 14.45 MHz   (59.4 %), step = 329 kHz      (143 m%)
+    stb: freq = 14.79 MHz   (59.6 %), step = 336.7 kHz    (143 m%)
+    stb: freq = 15.14 MHz   (59.7 %), step = 344.5 kHz    (143 m%)
+    stb: freq = 15.49 MHz   (59.9 %), step = 352.6 kHz    (143 m%)
+    stb: freq = 15.85 MHz     (60 %), step = 360.8 kHz    (143 m%)
+    stb: freq = 16.22 MHz   (60.1 %), step = 369.2 kHz    (143 m%)
+    stb: freq = 16.6 MHz    (60.3 %), step = 377.8 kHz    (143 m%)
+    stb: freq = 16.98 MHz   (60.4 %), step = 386.6 kHz    (143 m%)
+    stb: freq = 17.38 MHz   (60.6 %), step = 395.6 kHz    (143 m%)
+    stb: freq = 17.78 MHz   (60.7 %), step = 404.8 kHz    (143 m%)
+    stb: freq = 18.2 MHz    (60.9 %), step = 414.2 kHz    (143 m%)
+    stb: freq = 18.62 MHz     (61 %), step = 423.9 kHz    (143 m%)
+    stb: freq = 19.05 MHz   (61.1 %), step = 433.7 kHz    (143 m%)
+    stb: freq = 19.5 MHz    (61.3 %), step = 443.8 kHz    (143 m%)
+    stb: freq = 19.95 MHz   (61.4 %), step = 454.2 kHz    (143 m%)
+    stb: freq = 20.42 MHz   (61.6 %), step = 464.8 kHz    (143 m%)
+    stb: freq = 20.89 MHz   (61.7 %), step = 475.6 kHz    (143 m%)
+    stb: freq = 21.38 MHz   (61.9 %), step = 486.7 kHz    (143 m%)
+    stb: freq = 21.88 MHz     (62 %), step = 498 kHz      (143 m%)
+    stb: freq = 22.39 MHz   (62.1 %), step = 509.6 kHz    (143 m%)
+    stb: freq = 22.91 MHz   (62.3 %), step = 521.5 kHz    (143 m%)
+    stb: freq = 23.44 MHz   (62.4 %), step = 533.6 kHz    (143 m%)
+    stb: freq = 23.99 MHz   (62.6 %), step = 546 kHz      (143 m%)
+    stb: freq = 24.55 MHz   (62.7 %), step = 558.8 kHz    (143 m%)
+    stb: freq = 25.12 MHz   (62.9 %), step = 571.8 kHz    (143 m%)
+    stb: freq = 25.7 MHz      (63 %), step = 585.1 kHz    (143 m%)
+    stb: freq = 26.3 MHz    (63.1 %), step = 598.7 kHz    (143 m%)
+    stb: freq = 26.92 MHz   (63.3 %), step = 612.7 kHz    (143 m%)
+    stb: freq = 27.54 MHz   (63.4 %), step = 626.9 kHz    (143 m%)
+    stb: freq = 28.18 MHz   (63.6 %), step = 641.5 kHz    (143 m%)
+    stb: freq = 28.84 MHz   (63.7 %), step = 656.5 kHz    (143 m%)
+    stb: freq = 29.51 MHz   (63.9 %), step = 671.8 kHz    (143 m%)
+    stb: freq = 30.2 MHz      (64 %), step = 687.4 kHz    (143 m%)
+    stb: freq = 30.9 MHz    (64.1 %), step = 703.4 kHz    (143 m%)
+    stb: freq = 31.62 MHz   (64.3 %), step = 719.8 kHz    (143 m%)
+    stb: freq = 32.36 MHz   (64.4 %), step = 736.6 kHz    (143 m%)
+    stb: freq = 33.11 MHz   (64.6 %), step = 753.7 kHz    (143 m%)
+    stb: freq = 33.88 MHz   (64.7 %), step = 771.3 kHz    (143 m%)
+    stb: freq = 34.67 MHz   (64.9 %), step = 789.3 kHz    (143 m%)
+    stb: freq = 35.48 MHz     (65 %), step = 807.7 kHz    (143 m%)
+    stb: freq = 36.31 MHz   (65.1 %), step = 826.5 kHz    (143 m%)
+    stb: freq = 37.15 MHz   (65.3 %), step = 845.7 kHz    (143 m%)
+    stb: freq = 38.02 MHz   (65.4 %), step = 865.4 kHz    (143 m%)
+    stb: freq = 38.9 MHz    (65.6 %), step = 885.6 kHz    (143 m%)
+    stb: freq = 39.81 MHz   (65.7 %), step = 906.2 kHz    (143 m%)
+    stb: freq = 40.74 MHz   (65.9 %), step = 927.3 kHz    (143 m%)
+    stb: freq = 41.69 MHz     (66 %), step = 948.9 kHz    (143 m%)
+    stb: freq = 42.66 MHz   (66.1 %), step = 971 kHz      (143 m%)
+    stb: freq = 43.65 MHz   (66.3 %), step = 993.6 kHz    (143 m%)
+    stb: freq = 44.67 MHz   (66.4 %), step = 1.017 MHz    (143 m%)
+    stb: freq = 45.71 MHz   (66.6 %), step = 1.04 MHz     (143 m%)
+    stb: freq = 46.77 MHz   (66.7 %), step = 1.065 MHz    (143 m%)
+    stb: freq = 47.86 MHz   (66.9 %), step = 1.089 MHz    (143 m%)
+    stb: freq = 48.98 MHz     (67 %), step = 1.115 MHz    (143 m%)
+    stb: freq = 50.12 MHz   (67.1 %), step = 1.141 MHz    (143 m%)
+    stb: freq = 51.29 MHz   (67.3 %), step = 1.167 MHz    (143 m%)
+    stb: freq = 52.48 MHz   (67.4 %), step = 1.195 MHz    (143 m%)
+    stb: freq = 53.7 MHz    (67.6 %), step = 1.222 MHz    (143 m%)
+    stb: freq = 54.95 MHz   (67.7 %), step = 1.251 MHz    (143 m%)
+    stb: freq = 56.23 MHz   (67.9 %), step = 1.28 MHz     (143 m%)
+    stb: freq = 57.54 MHz     (68 %), step = 1.31 MHz     (143 m%)
+    stb: freq = 58.88 MHz   (68.1 %), step = 1.34 MHz     (143 m%)
+    stb: freq = 60.26 MHz   (68.3 %), step = 1.372 MHz    (143 m%)
+    stb: freq = 61.66 MHz   (68.4 %), step = 1.404 MHz    (143 m%)
+    stb: freq = 63.1 MHz    (68.6 %), step = 1.436 MHz    (143 m%)
+    stb: freq = 64.57 MHz   (68.7 %), step = 1.47 MHz     (143 m%)
+    stb: freq = 66.07 MHz   (68.9 %), step = 1.504 MHz    (143 m%)
+    stb: freq = 67.61 MHz     (69 %), step = 1.539 MHz    (143 m%)
+    stb: freq = 69.18 MHz   (69.1 %), step = 1.575 MHz    (143 m%)
+    stb: freq = 70.79 MHz   (69.3 %), step = 1.611 MHz    (143 m%)
+    stb: freq = 72.44 MHz   (69.4 %), step = 1.649 MHz    (143 m%)
+    stb: freq = 74.13 MHz   (69.6 %), step = 1.687 MHz    (143 m%)
+    stb: freq = 75.86 MHz   (69.7 %), step = 1.727 MHz    (143 m%)
+    stb: freq = 77.62 MHz   (69.9 %), step = 1.767 MHz    (143 m%)
+    stb: freq = 79.43 MHz     (70 %), step = 1.808 MHz    (143 m%)
+    stb: freq = 81.28 MHz   (70.1 %), step = 1.85 MHz     (143 m%)
+    stb: freq = 83.18 MHz   (70.3 %), step = 1.893 MHz    (143 m%)
+    stb: freq = 85.11 MHz   (70.4 %), step = 1.937 MHz    (143 m%)
+    stb: freq = 87.1 MHz    (70.6 %), step = 1.983 MHz    (143 m%)
+    stb: freq = 89.13 MHz   (70.7 %), step = 2.029 MHz    (143 m%)
+    stb: freq = 91.2 MHz    (70.9 %), step = 2.076 MHz    (143 m%)
+    stb: freq = 93.33 MHz     (71 %), step = 2.124 MHz    (143 m%)
+    stb: freq = 95.5 MHz    (71.1 %), step = 2.174 MHz    (143 m%)
+    stb: freq = 97.72 MHz   (71.3 %), step = 2.224 MHz    (143 m%)
+    stb: freq = 100 MHz     (71.4 %), step = 2.276 MHz    (143 m%)
+    stb: freq = 102.3 MHz   (71.6 %), step = 2.329 MHz    (143 m%)
+    stb: freq = 104.7 MHz   (71.7 %), step = 2.384 MHz    (143 m%)
+    stb: freq = 107.2 MHz   (71.9 %), step = 2.439 MHz    (143 m%)
+    stb: freq = 109.6 MHz     (72 %), step = 2.496 MHz    (143 m%)
+    stb: freq = 112.2 MHz   (72.1 %), step = 2.554 MHz    (143 m%)
+    stb: freq = 114.8 MHz   (72.3 %), step = 2.614 MHz    (143 m%)
+    stb: freq = 117.5 MHz   (72.4 %), step = 2.674 MHz    (143 m%)
+    stb: freq = 120.2 MHz   (72.6 %), step = 2.737 MHz    (143 m%)
+    stb: freq = 123 MHz     (72.7 %), step = 2.8 MHz      (143 m%)
+    stb: freq = 125.9 MHz   (72.9 %), step = 2.866 MHz    (143 m%)
+    stb: freq = 128.8 MHz     (73 %), step = 2.932 MHz    (143 m%)
+    stb: freq = 131.8 MHz   (73.1 %), step = 3.001 MHz    (143 m%)
+    stb: freq = 134.9 MHz   (73.3 %), step = 3.071 MHz    (143 m%)
+    stb: freq = 138 MHz     (73.4 %), step = 3.142 MHz    (143 m%)
+    stb: freq = 141.3 MHz   (73.6 %), step = 3.215 MHz    (143 m%)
+    stb: freq = 144.5 MHz   (73.7 %), step = 3.29 MHz     (143 m%)
+    stb: freq = 147.9 MHz   (73.9 %), step = 3.367 MHz    (143 m%)
+    stb: freq = 151.4 MHz     (74 %), step = 3.445 MHz    (143 m%)
+    stb: freq = 154.9 MHz   (74.1 %), step = 3.526 MHz    (143 m%)
+    stb: freq = 158.5 MHz   (74.3 %), step = 3.608 MHz    (143 m%)
+    stb: freq = 162.2 MHz   (74.4 %), step = 3.692 MHz    (143 m%)
+    stb: freq = 166 MHz     (74.6 %), step = 3.778 MHz    (143 m%)
+    stb: freq = 169.8 MHz   (74.7 %), step = 3.866 MHz    (143 m%)
+    stb: freq = 173.8 MHz   (74.9 %), step = 3.956 MHz    (143 m%)
+    stb: freq = 177.8 MHz     (75 %), step = 4.048 MHz    (143 m%)
+    stb: freq = 182 MHz     (75.1 %), step = 4.142 MHz    (143 m%)
+    stb: freq = 186.2 MHz   (75.3 %), step = 4.239 MHz    (143 m%)
+    stb: freq = 190.5 MHz   (75.4 %), step = 4.337 MHz    (143 m%)
+    stb: freq = 195 MHz     (75.6 %), step = 4.438 MHz    (143 m%)
+    stb: freq = 199.5 MHz   (75.7 %), step = 4.542 MHz    (143 m%)
+    stb: freq = 204.2 MHz   (75.9 %), step = 4.648 MHz    (143 m%)
+    stb: freq = 208.9 MHz     (76 %), step = 4.756 MHz    (143 m%)
+    stb: freq = 213.8 MHz   (76.1 %), step = 4.867 MHz    (143 m%)
+    stb: freq = 218.8 MHz   (76.3 %), step = 4.98 MHz     (143 m%)
+    stb: freq = 223.9 MHz   (76.4 %), step = 5.096 MHz    (143 m%)
+    stb: freq = 229.1 MHz   (76.6 %), step = 5.215 MHz    (143 m%)
+    stb: freq = 234.4 MHz   (76.7 %), step = 5.336 MHz    (143 m%)
+    stb: freq = 239.9 MHz   (76.9 %), step = 5.46 MHz     (143 m%)
+    stb: freq = 245.5 MHz     (77 %), step = 5.588 MHz    (143 m%)
+    stb: freq = 251.2 MHz   (77.1 %), step = 5.718 MHz    (143 m%)
+    stb: freq = 257 MHz     (77.3 %), step = 5.851 MHz    (143 m%)
+    stb: freq = 263 MHz     (77.4 %), step = 5.987 MHz    (143 m%)
+    stb: freq = 269.2 MHz   (77.6 %), step = 6.127 MHz    (143 m%)
+    stb: freq = 275.4 MHz   (77.7 %), step = 6.269 MHz    (143 m%)
+    stb: freq = 281.8 MHz   (77.9 %), step = 6.415 MHz    (143 m%)
+    stb: freq = 288.4 MHz     (78 %), step = 6.565 MHz    (143 m%)
+    stb: freq = 295.1 MHz   (78.1 %), step = 6.718 MHz    (143 m%)
+    stb: freq = 302 MHz     (78.3 %), step = 6.874 MHz    (143 m%)
+    stb: freq = 309 MHz     (78.4 %), step = 7.034 MHz    (143 m%)
+    stb: freq = 316.2 MHz   (78.6 %), step = 7.198 MHz    (143 m%)
+    stb: freq = 323.6 MHz   (78.7 %), step = 7.366 MHz    (143 m%)
+    stb: freq = 331.1 MHz   (78.9 %), step = 7.537 MHz    (143 m%)
+    stb: freq = 338.8 MHz     (79 %), step = 7.713 MHz    (143 m%)
+    stb: freq = 346.7 MHz   (79.1 %), step = 7.893 MHz    (143 m%)
+    stb: freq = 354.8 MHz   (79.3 %), step = 8.077 MHz    (143 m%)
+    stb: freq = 363.1 MHz   (79.4 %), step = 8.265 MHz    (143 m%)
+    stb: freq = 371.5 MHz   (79.6 %), step = 8.457 MHz    (143 m%)
+    stb: freq = 380.2 MHz   (79.7 %), step = 8.654 MHz    (143 m%)
+    stb: freq = 389 MHz     (79.9 %), step = 8.856 MHz    (143 m%)
+    stb: freq = 398.1 MHz     (80 %), step = 9.062 MHz    (143 m%)
+    stb: freq = 407.4 MHz   (80.1 %), step = 9.273 MHz    (143 m%)
+    stb: freq = 416.9 MHz   (80.3 %), step = 9.489 MHz    (143 m%)
+    stb: freq = 426.6 MHz   (80.4 %), step = 9.71 MHz     (143 m%)
+    stb: freq = 436.5 MHz   (80.6 %), step = 9.936 MHz    (143 m%)
+    stb: freq = 446.7 MHz   (80.7 %), step = 10.17 MHz    (143 m%)
+    stb: freq = 457.1 MHz   (80.9 %), step = 10.4 MHz     (143 m%)
+    stb: freq = 467.7 MHz     (81 %), step = 10.65 MHz    (143 m%)
+    stb: freq = 478.6 MHz   (81.1 %), step = 10.89 MHz    (143 m%)
+    stb: freq = 489.8 MHz   (81.3 %), step = 11.15 MHz    (143 m%)
+    stb: freq = 501.2 MHz   (81.4 %), step = 11.41 MHz    (143 m%)
+    stb: freq = 512.9 MHz   (81.6 %), step = 11.67 MHz    (143 m%)
+    stb: freq = 524.8 MHz   (81.7 %), step = 11.95 MHz    (143 m%)
+    stb: freq = 537 MHz     (81.9 %), step = 12.22 MHz    (143 m%)
+    stb: freq = 549.5 MHz     (82 %), step = 12.51 MHz    (143 m%)
+    stb: freq = 562.3 MHz   (82.1 %), step = 12.8 MHz     (143 m%)
+    stb: freq = 575.4 MHz   (82.3 %), step = 13.1 MHz     (143 m%)
+    stb: freq = 588.8 MHz   (82.4 %), step = 13.4 MHz     (143 m%)
+    stb: freq = 602.6 MHz   (82.6 %), step = 13.72 MHz    (143 m%)
+    stb: freq = 616.6 MHz   (82.7 %), step = 14.04 MHz    (143 m%)
+    stb: freq = 631 MHz     (82.9 %), step = 14.36 MHz    (143 m%)
+    stb: freq = 645.7 MHz     (83 %), step = 14.7 MHz     (143 m%)
+    stb: freq = 660.7 MHz   (83.1 %), step = 15.04 MHz    (143 m%)
+    stb: freq = 676.1 MHz   (83.3 %), step = 15.39 MHz    (143 m%)
+    stb: freq = 691.8 MHz   (83.4 %), step = 15.75 MHz    (143 m%)
+    stb: freq = 707.9 MHz   (83.6 %), step = 16.11 MHz    (143 m%)
+    stb: freq = 724.4 MHz   (83.7 %), step = 16.49 MHz    (143 m%)
+    stb: freq = 741.3 MHz   (83.9 %), step = 16.87 MHz    (143 m%)
+    stb: freq = 758.6 MHz     (84 %), step = 17.27 MHz    (143 m%)
+    stb: freq = 776.2 MHz   (84.1 %), step = 17.67 MHz    (143 m%)
+    stb: freq = 794.3 MHz   (84.3 %), step = 18.08 MHz    (143 m%)
+    stb: freq = 812.8 MHz   (84.4 %), step = 18.5 MHz     (143 m%)
+    stb: freq = 831.8 MHz   (84.6 %), step = 18.93 MHz    (143 m%)
+    stb: freq = 851.1 MHz   (84.7 %), step = 19.37 MHz    (143 m%)
+    stb: freq = 871 MHz     (84.9 %), step = 19.83 MHz    (143 m%)
+    stb: freq = 891.3 MHz     (85 %), step = 20.29 MHz    (143 m%)
+    stb: freq = 912 MHz     (85.1 %), step = 20.76 MHz    (143 m%)
+    stb: freq = 933.3 MHz   (85.3 %), step = 21.24 MHz    (143 m%)
+    stb: freq = 955 MHz     (85.4 %), step = 21.74 MHz    (143 m%)
+    stb: freq = 977.2 MHz   (85.6 %), step = 22.24 MHz    (143 m%)
+    stb: freq = 1 GHz       (85.7 %), step = 22.76 MHz    (143 m%)
+    stb: freq = 1.023 GHz   (85.9 %), step = 23.29 MHz    (143 m%)
+    stb: freq = 1.047 GHz     (86 %), step = 23.84 MHz    (143 m%)
+    stb: freq = 1.072 GHz   (86.1 %), step = 24.39 MHz    (143 m%)
+    stb: freq = 1.096 GHz   (86.3 %), step = 24.96 MHz    (143 m%)
+    stb: freq = 1.122 GHz   (86.4 %), step = 25.54 MHz    (143 m%)
+    stb: freq = 1.148 GHz   (86.6 %), step = 26.14 MHz    (143 m%)
+    stb: freq = 1.175 GHz   (86.7 %), step = 26.74 MHz    (143 m%)
+    stb: freq = 1.202 GHz   (86.9 %), step = 27.37 MHz    (143 m%)
+    stb: freq = 1.23 GHz      (87 %), step = 28 MHz       (143 m%)
+    stb: freq = 1.259 GHz   (87.1 %), step = 28.66 MHz    (143 m%)
+    stb: freq = 1.288 GHz   (87.3 %), step = 29.32 MHz    (143 m%)
+    stb: freq = 1.318 GHz   (87.4 %), step = 30.01 MHz    (143 m%)
+    stb: freq = 1.349 GHz   (87.6 %), step = 30.71 MHz    (143 m%)
+    stb: freq = 1.38 GHz    (87.7 %), step = 31.42 MHz    (143 m%)
+    stb: freq = 1.413 GHz   (87.9 %), step = 32.15 MHz    (143 m%)
+    stb: freq = 1.445 GHz     (88 %), step = 32.9 MHz     (143 m%)
+    stb: freq = 1.479 GHz   (88.1 %), step = 33.67 MHz    (143 m%)
+    stb: freq = 1.514 GHz   (88.3 %), step = 34.45 MHz    (143 m%)
+    stb: freq = 1.549 GHz   (88.4 %), step = 35.26 MHz    (143 m%)
+    stb: freq = 1.585 GHz   (88.6 %), step = 36.08 MHz    (143 m%)
+    stb: freq = 1.622 GHz   (88.7 %), step = 36.92 MHz    (143 m%)
+    stb: freq = 1.66 GHz    (88.9 %), step = 37.78 MHz    (143 m%)
+    stb: freq = 1.698 GHz     (89 %), step = 38.66 MHz    (143 m%)
+    stb: freq = 1.738 GHz   (89.1 %), step = 39.56 MHz    (143 m%)
+    stb: freq = 1.778 GHz   (89.3 %), step = 40.48 MHz    (143 m%)
+    stb: freq = 1.82 GHz    (89.4 %), step = 41.42 MHz    (143 m%)
+    stb: freq = 1.862 GHz   (89.6 %), step = 42.39 MHz    (143 m%)
+    stb: freq = 1.905 GHz   (89.7 %), step = 43.37 MHz    (143 m%)
+    stb: freq = 1.95 GHz    (89.9 %), step = 44.38 MHz    (143 m%)
+    stb: freq = 1.995 GHz     (90 %), step = 45.42 MHz    (143 m%)
+    stb: freq = 2.042 GHz   (90.1 %), step = 46.48 MHz    (143 m%)
+    stb: freq = 2.089 GHz   (90.3 %), step = 47.56 MHz    (143 m%)
+    stb: freq = 2.138 GHz   (90.4 %), step = 48.67 MHz    (143 m%)
+    stb: freq = 2.188 GHz   (90.6 %), step = 49.8 MHz     (143 m%)
+    stb: freq = 2.239 GHz   (90.7 %), step = 50.96 MHz    (143 m%)
+    stb: freq = 2.291 GHz   (90.9 %), step = 52.15 MHz    (143 m%)
+    stb: freq = 2.344 GHz     (91 %), step = 53.36 MHz    (143 m%)
+    stb: freq = 2.399 GHz   (91.1 %), step = 54.6 MHz     (143 m%)
+    stb: freq = 2.455 GHz   (91.3 %), step = 55.88 MHz    (143 m%)
+    stb: freq = 2.512 GHz   (91.4 %), step = 57.18 MHz    (143 m%)
+    stb: freq = 2.57 GHz    (91.6 %), step = 58.51 MHz    (143 m%)
+    stb: freq = 2.63 GHz    (91.7 %), step = 59.87 MHz    (143 m%)
+    stb: freq = 2.692 GHz   (91.9 %), step = 61.27 MHz    (143 m%)
+    stb: freq = 2.754 GHz     (92 %), step = 62.69 MHz    (143 m%)
+    stb: freq = 2.818 GHz   (92.1 %), step = 64.15 MHz    (143 m%)
+    stb: freq = 2.884 GHz   (92.3 %), step = 65.65 MHz    (143 m%)
+    stb: freq = 2.951 GHz   (92.4 %), step = 67.18 MHz    (143 m%)
+    stb: freq = 3.02 GHz    (92.6 %), step = 68.74 MHz    (143 m%)
+    stb: freq = 3.09 GHz    (92.7 %), step = 70.34 MHz    (143 m%)
+    stb: freq = 3.162 GHz   (92.9 %), step = 71.98 MHz    (143 m%)
+    stb: freq = 3.236 GHz     (93 %), step = 73.66 MHz    (143 m%)
+    stb: freq = 3.311 GHz   (93.1 %), step = 75.37 MHz    (143 m%)
+    stb: freq = 3.388 GHz   (93.3 %), step = 77.13 MHz    (143 m%)
+    stb: freq = 3.467 GHz   (93.4 %), step = 78.93 MHz    (143 m%)
+    stb: freq = 3.548 GHz   (93.6 %), step = 80.77 MHz    (143 m%)
+    stb: freq = 3.631 GHz   (93.7 %), step = 82.65 MHz    (143 m%)
+    stb: freq = 3.715 GHz   (93.9 %), step = 84.57 MHz    (143 m%)
+    stb: freq = 3.802 GHz     (94 %), step = 86.54 MHz    (143 m%)
+    stb: freq = 3.89 GHz    (94.1 %), step = 88.56 MHz    (143 m%)
+    stb: freq = 3.981 GHz   (94.3 %), step = 90.62 MHz    (143 m%)
+    stb: freq = 4.074 GHz   (94.4 %), step = 92.73 MHz    (143 m%)
+    stb: freq = 4.169 GHz   (94.6 %), step = 94.89 MHz    (143 m%)
+    stb: freq = 4.266 GHz   (94.7 %), step = 97.1 MHz     (143 m%)
+    stb: freq = 4.365 GHz   (94.9 %), step = 99.36 MHz    (143 m%)
+    stb: freq = 4.467 GHz     (95 %), step = 101.7 MHz    (143 m%)
+    stb: freq = 4.571 GHz   (95.1 %), step = 104 MHz      (143 m%)
+    stb: freq = 4.677 GHz   (95.3 %), step = 106.5 MHz    (143 m%)
+    stb: freq = 4.786 GHz   (95.4 %), step = 108.9 MHz    (143 m%)
+    stb: freq = 4.898 GHz   (95.6 %), step = 111.5 MHz    (143 m%)
+    stb: freq = 5.012 GHz   (95.7 %), step = 114.1 MHz    (143 m%)
+    stb: freq = 5.129 GHz   (95.9 %), step = 116.7 MHz    (143 m%)
+    stb: freq = 5.248 GHz     (96 %), step = 119.5 MHz    (143 m%)
+    stb: freq = 5.37 GHz    (96.1 %), step = 122.2 MHz    (143 m%)
+    stb: freq = 5.495 GHz   (96.3 %), step = 125.1 MHz    (143 m%)
+    stb: freq = 5.623 GHz   (96.4 %), step = 128 MHz      (143 m%)
+    stb: freq = 5.754 GHz   (96.6 %), step = 131 MHz      (143 m%)
+    stb: freq = 5.888 GHz   (96.7 %), step = 134 MHz      (143 m%)
+    stb: freq = 6.026 GHz   (96.9 %), step = 137.2 MHz    (143 m%)
+    stb: freq = 6.166 GHz     (97 %), step = 140.4 MHz    (143 m%)
+    stb: freq = 6.31 GHz    (97.1 %), step = 143.6 MHz    (143 m%)
+    stb: freq = 6.457 GHz   (97.3 %), step = 147 MHz      (143 m%)
+    stb: freq = 6.607 GHz   (97.4 %), step = 150.4 MHz    (143 m%)
+    stb: freq = 6.761 GHz   (97.6 %), step = 153.9 MHz    (143 m%)
+    stb: freq = 6.918 GHz   (97.7 %), step = 157.5 MHz    (143 m%)
+    stb: freq = 7.079 GHz   (97.9 %), step = 161.1 MHz    (143 m%)
+    stb: freq = 7.244 GHz     (98 %), step = 164.9 MHz    (143 m%)
+    stb: freq = 7.413 GHz   (98.1 %), step = 168.7 MHz    (143 m%)
+    stb: freq = 7.586 GHz   (98.3 %), step = 172.7 MHz    (143 m%)
+    stb: freq = 7.762 GHz   (98.4 %), step = 176.7 MHz    (143 m%)
+    stb: freq = 7.943 GHz   (98.6 %), step = 180.8 MHz    (143 m%)
+    stb: freq = 8.128 GHz   (98.7 %), step = 185 MHz      (143 m%)
+    stb: freq = 8.318 GHz   (98.9 %), step = 189.3 MHz    (143 m%)
+    stb: freq = 8.511 GHz     (99 %), step = 193.7 MHz    (143 m%)
+    stb: freq = 8.71 GHz    (99.1 %), step = 198.3 MHz    (143 m%)
+    stb: freq = 8.913 GHz   (99.3 %), step = 202.9 MHz    (143 m%)
+    stb: freq = 9.12 GHz    (99.4 %), step = 207.6 MHz    (143 m%)
+    stb: freq = 9.333 GHz   (99.6 %), step = 212.4 MHz    (143 m%)
+    stb: freq = 9.55 GHz    (99.7 %), step = 217.4 MHz    (143 m%)
+    stb: freq = 9.772 GHz   (99.9 %), step = 222.4 MHz    (143 m%)
+    stb: freq = 10 GHz       (100 %), step = 227.6 MHz    (143 m%)
+
+Notice from spectre at freq = 10 GHz during STB analysis `stb'.
+    No gain margin. Phase does not reach 0 Deg.
+
+Phase margin = 73.2119 Deg at frequency = 163.68 MHz.
+Accumulated DC solution time =            0 s.
+Intrinsic stb analysis time =              10 ms.
+Total time required for stb analysis `stb': CPU = 17.382 ms, elapsed = 36.001 ms.
+Time accumulated: CPU = 191.575 ms, elapsed = 499.882 ms.
+Peak resident memory used = 124 Mbytes.
+
+modelParameter: writing model parameter values to rawfile.
+
+Opening the PSF file ../psf/modelParameter.info ...
+element: writing instance parameter values to rawfile.
+
+Opening the PSF file ../psf/element.info ...
+outputParameter: writing output parameter values to rawfile.
+
+Opening the PSF file ../psf/outputParameter.info ...
+designParamVals: writing netlist parameters to rawfile.
+
+Opening the PSFASCII file ../psf/designParamVals.info ...
+primitives: writing primitives to rawfile.
+
+Opening the PSFASCII file ../psf/primitives.info.primitives ...
+subckts: writing subcircuits to rawfile.
+
+Opening the PSFASCII file ../psf/subckts.info.subckts ...
+
+Aggregate audit (8:25:20 PM, Wed Nov 10, 2021):
+Time used: CPU = 201 ms, elapsed = 613 ms, util. = 32.8%.
+Time spent in licensing: elapsed = 13.1 ms.
+Peak memory used = 125 Mbytes.
+Simulation started at: 8:25:19 PM, Wed Nov 10, 2021, ended at: 8:25:20 PM, Wed Nov 10, 2021, with elapsed time (wall clock): 613 ms.
+spectre completes with 0 errors, 1 warning, and 5 notices.

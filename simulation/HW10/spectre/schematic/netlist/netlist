@@ -1,0 +1,8 @@
+
+// Library name: MyOwnECE6720
+// Cell name: HW10
+// View name: schematic
+M0 (net3 net1 0 0) nmos180 w=10u l=0.18u
+V1 (net4 0) vsource dc=Vds type=dc
+V0 (net1 0) vsource dc=Vgs type=dc
+IPRB0 (net4 net3) iprobe

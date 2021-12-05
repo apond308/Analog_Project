@@ -1,0 +1,12 @@
+HEADER
+"PSFversion" "1.00"
+"Cinmn Cinpn" "ECE6720_cap_spectre"
+"Ron Rnoisen" "ECE6720_res_spectre"
+"Vnn" "ECE6720_vdc_spectre"
+"Gmn" "ECE6720_vccs_spectre"
+"Fnoisen" "ECE6720_cccs_spectre"
+"Ibiasn" "ECE6720_idc_spectre"
+"VDDv" ":1v"
+"vimv" ":2v"
+"vipv" ":3v"
+"voutv" ":4v"

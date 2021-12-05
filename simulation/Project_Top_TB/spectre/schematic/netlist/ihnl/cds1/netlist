@@ -1,0 +1,19 @@
+
+// Library name: MyOwnECE6720
+// Cell name: Project_Top_TB
+// View name: schematic
+Ccomp (Vgate1 0) capacitor c=Ccomp 
+CPAR (in 0) capacitor c=Cpar
+CL (Vout 0) capacitor c=50f
+VDD (vdd! 0) vsource dc=1.8 type=dc
+VBIAS (net9 0) vsource dc=600m type=dc
+Iin (0 in) isource dc=0 mag=1 type=sine
+M3 (Vout Vo2 0 0) nmos180 w=W3 l=0.18u
+M2 (vdd! Vo1 Vo2 0) nmos180 w=W2 l=0.18u
+M1 (Vo1 net11 in 0) nmos180 w=W1 l=0.18u
+RL1 (vdd! Vo1) resistor r=RL1
+RL3 (vdd! Vout) resistor r=RL3
+RS (in 0) resistor r=RS
+A1 (vdd! in net9 Vgate1) D_to_SE_OTA_model ID=200u
+IBIAS2 (Vo2 0) isource dc=IBIAS2 type=dc
+IPRB0 (net11 Vgate1) iprobe

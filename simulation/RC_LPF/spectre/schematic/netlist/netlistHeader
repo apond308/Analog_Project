@@ -1,0 +1,7 @@
+// Generated for: spectre
+// Generated on: Sep 20 12:09:37 2021
+// Design library name: MyOwnECE6720
+// Design cell name: RC_LPF
+// Design view name: schematic
+simulator lang=spectre
+global 0

@@ -1,0 +1,10 @@
+HEADER
+"PSFversion" "1.00"
+"design" "(\"MyOwnECE6720\" \"diff\" \"schematic\" \"\")"
+"simulator" "spectre"
+"temperature" "27"
+"host" ""
+"date" "Nov 24 14:46:32 2021"
+"title" ""
+"analysisList" "()"
+END

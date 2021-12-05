@@ -1,0 +1,18 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "RC_LPF"
+  repList "spectre cmos_sch cmos.sch schematic veriloga"
+  stopList "spectre"
+  globalList "gnd!"
+  hierDelim "."
+  netlistDir "/home/u0666767/ECE6720_F21/simulation/RC_LPF/spectre/schematic/netlist"
+ )
+( net
+( "gnd!" "0" )
+ )
+( model
+( "MyOwnECE6720/RC_LPF/schematic" "RC_LPF" )
+ )
+( "RC_LPF" "ihnl/cds0/map" )
+ )

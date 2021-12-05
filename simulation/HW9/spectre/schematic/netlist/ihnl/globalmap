@@ -1,0 +1,12 @@
+CADENCE IHNL11140
+$model
+MyOwnECE6720/HW9/schematic HW9
+ECE6720/HW9_A1/schematic HW9_A1
+$endmodel
+$net
+gnd! 0
+$endnet
+$param
+R2 R2
+R1 R1
+$endparam

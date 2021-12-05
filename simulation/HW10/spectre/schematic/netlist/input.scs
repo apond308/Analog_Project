@@ -1,0 +1,33 @@
+// Generated for: spectre
+// Generated on: Nov 24 08:18:01 2021
+// Design library name: MyOwnECE6720
+// Design cell name: HW10
+// Design view name: schematic
+simulator lang=spectre
+global 0
+parameters Vds=1.8 Vgs=0
+include "/home/AMSICtools/models/Generic180nm.mod"
+
+// Library name: MyOwnECE6720
+// Cell name: HW10
+// View name: schematic
+M0 (net3 net1 0 0) nmos180 w=10u l=0.18u
+V1 (net4 0) vsource dc=Vds type=dc
+V0 (net1 0) vsource dc=Vgs type=dc
+IPRB0 (net4 net3) iprobe
+simulatorOptions options psfversion="1.4.0" reltol=1e-3 vabstol=1e-6 \
+    iabstol=1e-12 temp=27 tnom=27 scalem=1.0 scale=1.0 gmin=1e-12 rforce=1 \
+    maxnotes=5 maxwarns=5 digits=5 cols=80 pivrel=1e-3 \
+    sensfile="../psf/sens.output" checklimitdest=psf 
+dcOp dc write="spectre.dc" maxiters=150 maxsteps=10000 annotate=status
+dcOpInfo info what=oppoint where=rawfile
+dc dc param=Vgs start=0 stop=1.8 step=0.2 oppoint=rawfile maxiters=150 \
+    maxsteps=10000 annotate=status
+modelParameter info what=models where=rawfile
+element info what=inst where=rawfile
+outputParameter info what=output where=rawfile
+designParamVals info what=parameters where=rawfile
+primitives info what=primitives where=rawfile
+subckts info what=subckts where=rawfile
+save IPRB0:in 
+saveOptions options save=allpub currents=all

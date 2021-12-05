@@ -1,0 +1,28 @@
+// Generated for: spectre
+// Generated on: Sep 20 12:09:37 2021
+// Design library name: MyOwnECE6720
+// Design cell name: RC_LPF
+// Design view name: schematic
+simulator lang=spectre
+global 0
+parameters vdc=1
+include "/home/AMSICtools/models/Generic180nm.mod"
+
+// Library name: MyOwnECE6720
+// Cell name: RC_LPF
+// View name: schematic
+R0 (in out) resistor r=1K
+C0 (out 0) capacitor c=1p
+V0 (in 0) vsource dc=vdc mag=1 type=dc
+simulatorOptions options psfversion="1.4.0" reltol=1e-3 vabstol=1e-6 \
+    iabstol=1e-12 temp=27 tnom=27 scalem=1.0 scale=1.0 gmin=1e-12 rforce=1 \
+    maxnotes=5 maxwarns=5 digits=5 cols=80 pivrel=1e-3 \
+    sensfile="../psf/sens.output" checklimitdest=psf 
+ac ac start=1 stop=100G dec=50 annotate=status 
+modelParameter info what=models where=rawfile
+element info what=inst where=rawfile
+outputParameter info what=output where=rawfile
+designParamVals info what=parameters where=rawfile
+primitives info what=primitives where=rawfile
+subckts info what=subckts where=rawfile
+saveOptions options save=allpub

@@ -1,0 +1,8 @@
+HEADER
+"PSFversion" "1.00"
+"Cinternaln" "ECE6720_cap_spectre"
+"Eoutn Einn" "ECE6720_vcvs_spectre"
+"Rinternaln" "ECE6720_res_spectre"
+"Vmv" ":1v"
+"Voutv" ":2v"
+"Vpv" ":3v"

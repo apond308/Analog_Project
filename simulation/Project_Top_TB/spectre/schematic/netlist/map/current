@@ -1,0 +1,20 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "Project_Top_TB"
+  repList "spectre cmos_sch cmos.sch schematic veriloga"
+  stopList "spectre"
+  globalList "gnd! vdd!"
+  hierDelim "."
+  netlistDir "/home/u0666767/ECE6720_F21/simulation/Project_Top_TB/spectre/schematic/netlist"
+ )
+( net
+( "gnd!" "0" )
+ )
+( model
+( "ECE6720/D_to_SE_OTA_model/schematic" "D_to_SE_OTA_model" )
+( "MyOwnECE6720/Project_Top_TB/schematic" "Project_Top_TB" )
+ )
+( "Project_Top_TB" "ihnl/cds1/map" )
+( "D_to_SE_OTA_model" "ihnl/cds0/map" )
+ )

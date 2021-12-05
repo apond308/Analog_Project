@@ -1,0 +1,24 @@
+
+// Library name: ECE6720
+// Cell name: HW9_A1
+// View name: schematic
+subckt HW9_A1 Vm Vout Vp
+    Cinternal (voutfilt 0) capacitor c=20p
+    Eout (Vout 0 voutfilt 0) vcvs gain=1
+    Ein (voutraw 0 Vp Vm) vcvs gain=500
+    Rinternal (voutraw voutfilt) resistor r=1/2/M_PI/20p/500e6 isnoisy=no
+ends HW9_A1
+// End of subcircuit definition.
+
+// Library name: MyOwnECE6720
+// Cell name: HW9
+// View name: schematic
+I0 (net5 net4 net6) HW9_A1
+IPRB0 (net4 net3) iprobe
+M0 (net2 net3 net1 0) nmos180 w=27.5u l=0.4u
+R2 (0 net5) resistor r=R2
+R1 (net5 net1) resistor r=R1
+R0 (net1 0) resistor r=2.2K
+V1 (net6 0) vsource dc=518m type=dc
+V0 (net2 0) vsource dc=1.8 type=dc
+C1 (0 net1) capacitor c=1n

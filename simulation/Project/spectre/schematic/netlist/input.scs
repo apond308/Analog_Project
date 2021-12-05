@@ -1,0 +1,61 @@
+// Generated for: spectre
+// Generated on: Nov 28 07:35:30 2021
+// Design library name: MyOwnECE6720
+// Design cell name: Project
+// Design view name: schematic
+simulator lang=spectre
+global 0 vdd!
+parameters RS=3.2K RL1=2.4K RL3=11.7k W1=12u W2=6u W3=6u Ccomp=2p \
+    IBIAS2=100u Cpar=1p
+include "/home/AMSICtools/models/Generic180nm.mod"
+
+// Library name: ECE6720
+// Cell name: D_to_SE_OTA_model
+// View name: schematic
+subckt D_to_SE_OTA_model VDD vim vip vout
+parameters ID
+    Cinm (vim 0) capacitor c=10*ID/2/M_PI/2e9
+    Cinp (vip 0) capacitor c=10*ID/2/M_PI/2e9
+    Ro (vout 0) resistor r=10/ID isnoisy=no
+    Rnoise (net6 0) resistor r=1/4/0.67/10/ID
+    Vn (net6 0) vsource dc=0 type=dc
+    Gm (0 vout vip vim) vccs gm=10*ID
+    Fnoise (vout 0) cccs gain=1.0 probe=Vn
+    Ibias (VDD 0) isource dc=2*ID type=dc
+ends D_to_SE_OTA_model
+// End of subcircuit definition.
+
+// Library name: MyOwnECE6720
+// Cell name: Project
+// View name: schematic
+Ccomp (Vgate1 0) capacitor c=Ccomp 
+CPAR (in 0) capacitor c=Cpar
+CL (Vout 0) capacitor c=50f
+VDD (vdd! 0) vsource dc=1.8 type=dc
+VBIAS (net9 0) vsource dc=600m type=dc
+Iin (0 in) isource dc=0 mag=1 type=sine
+M3 (Vout Vo2 0 0) nmos180 w=W3 l=0.18u
+M2 (vdd! Vo1 Vo2 0) nmos180 w=W2 l=0.18u
+M1 (Vo1 net11 in 0) nmos180 w=W1 l=0.18u
+RL1 (vdd! Vo1) resistor r=RL1
+RL3 (vdd! Vout) resistor r=RL3
+RS (in 0) resistor r=RS
+A1 (vdd! in net9 Vgate1) D_to_SE_OTA_model ID=200u
+IBIAS2 (Vo2 0) isource dc=IBIAS2 type=dc
+IPRB0 (net11 Vgate1) iprobe
+simulatorOptions options psfversion="1.4.0" reltol=1e-3 vabstol=1e-6 \
+    iabstol=1e-12 temp=27 tnom=27 scalem=1.0 scale=1.0 gmin=1e-12 rforce=1 \
+    maxnotes=5 maxwarns=5 digits=5 cols=80 pivrel=1e-3 \
+    sensfile="../psf/sens.output" checklimitdest=psf 
+dcOp dc write="spectre.dc" maxiters=150 maxsteps=10000 annotate=status
+dcOpInfo info what=oppoint where=rawfile
+ac ac start=1 stop=100G dec=200 annotate=status 
+noise ( Vout 0 ) noise start=1 stop=100G dec=200 annotate=status 
+stb stb start=1 stop=5G dec=100 probe=IPRB0 annotate=status 
+modelParameter info what=models where=rawfile
+element info what=inst where=rawfile
+outputParameter info what=output where=rawfile
+designParamVals info what=parameters where=rawfile
+primitives info what=primitives where=rawfile
+subckts info what=subckts where=rawfile
+saveOptions options save=allpub

@@ -1,0 +1,1 @@
+{"hierarchy":{"top_level":1,"1":{"insts":{"RL":3,"CL":5,"VDD":2,"VIN":4,"M1":6}}},"modelMap":{"vsource":[4,2],"resistor":[3],"nmos180":[6],"capacitor":[5]},"cellviews":[["ECE6720","example_cs","schematic"],["ECE6720","vdc","spectre"],["ECE6720","res","spectre"],["ECE6720","vsin","spectre"],["ECE6720","cap","spectre"],["ECE6720","nmos","spectre"]]}

@@ -1,0 +1,4 @@
+    K3 (vm vcm 0 vdm) transformer n1=1 n2=2
+    K0 (vp vcm vdm 0) transformer n1=1 n2=2
+ends ideal_balun
+// End of subcircuit definition.

@@ -1,0 +1,7 @@
+// Generated for: spectre
+// Generated on: Sep 22 20:36:32 2021
+// Design library name: MyOwnECE6720
+// Design cell name: Common_Gate
+// Design view name: schematic
+simulator lang=spectre
+global 0

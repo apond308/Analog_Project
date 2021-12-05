@@ -1,0 +1,9 @@
+HEADER
+"PSFversion" "1.00"
+"R3n R2n R1n R0n" "ECE6720_res_spectre"
+"C1n C0n" "ECE6720_cap_spectre"
+"M1n M0n" "ECE6720_nmos_spectre"
+"I1n" "ECE6720_idc_spectre"
+"V1n V0n" "ECE6720_vdc_spectre"
+"I5n I4n" "ideal_balun"
+"V2n" "ECE6720_vsin_spectre"

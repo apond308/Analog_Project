@@ -1,0 +1,5 @@
+
+// Library name: ECE6720
+// Cell name: HW9_A1
+// View name: schematic
+subckt HW9_A1 Vm Vout Vp

@@ -1,0 +1,10 @@
+    Cinm (vim 0) capacitor c=10*ID/2/M_PI/2e9
+    Cinp (vip 0) capacitor c=10*ID/2/M_PI/2e9
+    Ro (vout 0) resistor r=10/ID isnoisy=no
+    Rnoise (net6 0) resistor r=1/4/0.67/10/ID
+    Vn (net6 0) vsource dc=0 type=dc
+    Gm (0 vout vip vim) vccs gm=10*ID
+    Fnoise (vout 0) cccs gain=1.0 probe=Vn
+    Ibias (VDD 0) isource dc=2*ID type=dc
+ends D_to_SE_OTA_model
+// End of subcircuit definition.

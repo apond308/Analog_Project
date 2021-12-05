@@ -1,0 +1,6 @@
+    Cinternal (voutfilt 0) capacitor c=20p
+    Eout (Vout 0 voutfilt 0) vcvs gain=1
+    Ein (voutraw 0 Vp Vm) vcvs gain=500
+    Rinternal (voutraw voutfilt) resistor r=1/2/M_PI/20p/500e6 isnoisy=no
+ends HW9_A1
+// End of subcircuit definition.

@@ -1,0 +1,1 @@
+{"hierarchy":{"top_level":1,"1":{"insts":{"C0":3,"R0":2,"V0":4}}},"modelMap":{"resistor":[2],"vsource":[4],"capacitor":[3]},"cellviews":[["MyOwnECE6720","RC_LPF","schematic"],["ECE6720","res","spectre"],["ECE6720","cap","spectre"],["ECE6720","vdc","spectre"]]}

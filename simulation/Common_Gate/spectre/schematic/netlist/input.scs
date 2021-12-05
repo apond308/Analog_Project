@@ -1,0 +1,32 @@
+// Generated for: spectre
+// Generated on: Sep 22 20:36:32 2021
+// Design library name: MyOwnECE6720
+// Design cell name: Common_Gate
+// Design view name: schematic
+simulator lang=spectre
+global 0
+include "/home/AMSICtools/models/Generic180nm.mod"
+
+// Library name: MyOwnECE6720
+// Cell name: Common_Gate
+// View name: schematic
+V1 (net4 0) vsource dc=1.8 type=dc
+V0 (net1 0) vsource dc=900m type=dc
+M0 (out net1 net2 0) nmos180 w=15u l=0.18u
+R0 (net4 out) resistor r=4K
+C0 (out 0) capacitor c=200f
+I2 (net2 0) isource dc=200u type=dc
+I1 (net2 0) isource mag=1 type=dc
+simulatorOptions options psfversion="1.4.0" reltol=1e-3 vabstol=1e-6 \
+    iabstol=1e-12 temp=27 tnom=27 scalem=1.0 scale=1.0 gmin=1e-12 rforce=1 \
+    maxnotes=5 maxwarns=5 digits=5 cols=80 pivrel=1e-3 \
+    sensfile="../psf/sens.output" checklimitdest=psf 
+dcOp dc write="spectre.dc" maxiters=150 maxsteps=10000 annotate=status
+dcOpInfo info what=oppoint where=rawfile
+modelParameter info what=models where=rawfile
+element info what=inst where=rawfile
+outputParameter info what=output where=rawfile
+designParamVals info what=parameters where=rawfile
+primitives info what=primitives where=rawfile
+subckts info what=subckts where=rawfile
+saveOptions options save=allpub

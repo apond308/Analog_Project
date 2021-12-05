@@ -1,0 +1,13 @@
+
+// Library name: MyOwnECE6720
+// Cell name: HW7
+// View name: schematic
+M0 (net1 net2 0 0) nmos180 w=150u l=1u
+R3 (net2 net3) resistor r=10K
+R2 (net5 net3) resistor r=10K
+R1 (net3 net4) resistor r=10K
+R0 (net5 net1) resistor r=6.5K
+I2 (net2 0) isource mag=1 type=dc
+I0 (net5 net1) isource dc=300u type=dc
+IPRB0 (net4 net1) iprobe
+V0 (net5 0) vsource dc=V0 type=dc

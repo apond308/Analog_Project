@@ -1,0 +1,7 @@
+
+// Library name: MyOwnECE6720
+// Cell name: RC_LPF
+// View name: schematic
+R0 (in out) resistor r=1K
+C0 (out 0) capacitor c=1p
+V0 (in 0) vsource dc=vdc mag=1 type=dc

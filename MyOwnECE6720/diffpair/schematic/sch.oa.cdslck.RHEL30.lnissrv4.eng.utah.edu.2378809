@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      u0666767
+HostName                       lnissrv4.eng.utah.edu
+ProcessIdentifier              2378809
+ProcessCreationTime_UTC        1632978462
+ProcessCreationTime_Readable   Wed Sep 29 23:07:42 2021 MDT
+AppIdentifier                  OA File System Design Manager
+OSType                         unix
+ReasonForPlacingEditLock       OpenAccess edit lock
+FilePathUsedToEditLock         /home/u0666767/ECE6720_F21/MyOwnECE6720/diffpair/schematic/sch.oa.cdslck
+TimeEditLocked                 Mon Oct  4 17:23:09 2021 MDT
